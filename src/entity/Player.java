@@ -11,17 +11,23 @@ import java.io.IOException;
 public class Player extends Entity{
     GamePanel gp;
     KeyHandler keyH;
+    public final int screenX;
+    public final int screenY;
+
 
     public Player(GamePanel gp, KeyHandler keyH){
         this.gp = gp;
         this.keyH = keyH;
+        screenX = gp.screenWidth/2 - (gp.tileSize/2);
+        screenY = gp.screenHeight/2 - (gp.tileSize/2);
         setDefaultValues();
         getPlayerImage();
     }
 
     public void setDefaultValues(){
-        x = 100;
-        y= 100;
+        //player position on world map
+        worldX = gp.tileSize * 23;
+        worldY= gp.tileSize * 21;
         speed = 4;
         direction = "down";
     }
@@ -48,16 +54,16 @@ public class Player extends Entity{
 
             if(keyH.upPressed== true) {
                 direction = "up";
-                y -= speed; //player goes up
+                worldY -= speed; //player goes up
             } else if(keyH.downPressed == true){
                 direction = "down";
-                y += speed;//player goes down
+                worldY += speed;//player goes down
             } else if(keyH.leftPressed == true){
                 direction = "left";
-                x -= speed; //player goes left
+                worldX -= speed; //player goes left
             } else if(keyH.rightPressed == true){
                 direction = "right";
-                x += speed; //player goes right
+                worldX += speed; //player goes right
             }
 
             //animation -> image changes every time frame
@@ -115,6 +121,6 @@ public class Player extends Entity{
                 }
                 break;
         }
-        g2.drawImage(image, x,y, gp.tileSize, gp.tileSize, null);
+        g2.drawImage(image, screenX,screenY, gp.tileSize, gp.tileSize, null);
     }
 }
