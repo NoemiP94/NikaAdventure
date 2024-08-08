@@ -20,6 +20,14 @@ public class Player extends Entity{
         this.keyH = keyH;
         screenX = gp.screenWidth/2 - (gp.tileSize/2);
         screenY = gp.screenHeight/2 - (gp.tileSize/2);
+
+        //collision area
+        solidArea = new Rectangle();
+        solidArea.x = 8;
+        solidArea.y = 16;
+        solidArea.width = 32;
+        solidArea.height = 32;
+
         setDefaultValues();
         getPlayerImage();
     }
@@ -54,16 +62,34 @@ public class Player extends Entity{
 
             if(keyH.upPressed== true) {
                 direction = "up";
-                worldY -= speed; //player goes up
             } else if(keyH.downPressed == true){
                 direction = "down";
-                worldY += speed;//player goes down
             } else if(keyH.leftPressed == true){
                 direction = "left";
-                worldX -= speed; //player goes left
             } else if(keyH.rightPressed == true){
                 direction = "right";
-                worldX += speed; //player goes right
+            }
+
+            //CHECK TILE COLLISION
+            collisionOn = false;
+            gp.cChecker.checkTile(this);
+
+            //IF COLLISION IS FALSE, PLAYER CAN MOVE
+            if(collisionOn == false){
+                switch(direction){
+                    case "up":
+                        worldY -= speed; //player goes up
+                        break;
+                    case "down":
+                        worldY += speed;//player goes down
+                        break;
+                    case "left":
+                        worldX -= speed; //player goes left
+                        break;
+                    case "right":
+                        worldX += speed; //player goes right
+                        break;
+                }
             }
 
             //animation -> image changes every time frame

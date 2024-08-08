@@ -30,6 +30,7 @@ public class GamePanel extends JPanel implements Runnable{
     TileManager tileM = new TileManager(this);
     KeyHandler keyH = new KeyHandler();
     Thread gameThread; //time in game
+    public CollisionChecker cChecker = new CollisionChecker(this);
     public Player player = new Player(this, keyH);
 
     //Set player's default position
@@ -52,7 +53,7 @@ public class GamePanel extends JPanel implements Runnable{
         gameThread.start();
     }
 
-    //SLEEP METHOD -> non accurated
+    //SLEEP METHOD -> not accurated
    /* @Override
     public void run() {
         double drawInterval = 1000000000/FPS;
