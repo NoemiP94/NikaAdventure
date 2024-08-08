@@ -1,6 +1,7 @@
 package main;
 
 import entity.Player;
+import object.SuperObject;
 import tile.TileManager;
 
 import javax.swing.*;
@@ -31,7 +32,9 @@ public class GamePanel extends JPanel implements Runnable{
     KeyHandler keyH = new KeyHandler();
     Thread gameThread; //time in game
     public CollisionChecker cChecker = new CollisionChecker(this);
+    public AssetSetter aSetter = new AssetSetter(this);
     public Player player = new Player(this, keyH);
+    public SuperObject[] obj = new SuperObject[10];
 
     //Set player's default position
     //int playerX = 100;
@@ -46,6 +49,10 @@ public class GamePanel extends JPanel implements Runnable{
         this.setDoubleBuffered(true);// all the drawing from this component will be done in offscreen painting buffer -> improve rendering performance
         this.addKeyListener(keyH);
         this.setFocusable(true); //GamePanel can be 'focused' to receive input
+    }
+
+    public void setupGame(){
+        aSetter.setObject();
     }
 
     public void startGameThread(){ //create a new Thread and start it
@@ -132,7 +139,16 @@ public class GamePanel extends JPanel implements Runnable{
         //Graphics2D provide more sophisticated controls
         Graphics2D g2 = (Graphics2D)g; //Cast Graphics to Graphics2D
         //draw first background and then player
+        //TILE
         tileM.draw(g2);
+        //OBJECT
+        for(int i= 0; i < obj.length; i++){
+            if(obj[i]!= null){
+                obj[i].draw(g2,this);
+            }
+        }
+
+        //PLAYER
         player.draw(g2);
         g2.dispose(); //dispose of this graphics context and release any system resources that is using
     }
