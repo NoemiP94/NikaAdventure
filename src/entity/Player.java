@@ -121,17 +121,24 @@ public class Player extends Entity{
             String objectName = gp.obj[i].name;
             switch(objectName){
                 case "Key":
+                    gp.playSE(1); //coin sound
                     hasKey++;
                     gp.obj[i] = null; //the object disappear when player touch it
                     System.out.println("Key: " + hasKey);
                     break;
                 case "Door":
+                    gp.playSE(3); //unlock sound
                     //if player has a key the door disappear and decrements the number of key
                     if(hasKey > 0){
                         gp.obj[i] = null;
                         hasKey--;
                     }
                     System.out.println("Key: " + hasKey);
+                    break;
+                case "Boots": //boots increase player speed
+                    gp.playSE(2); //powerup sound
+                    speed += 2;
+                    gp.obj[i] = null;
                     break;
             }
         }
