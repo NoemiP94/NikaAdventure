@@ -13,7 +13,7 @@ public class Player extends Entity{
     KeyHandler keyH;
     public final int screenX;
     public final int screenY;
-    int hasKey = 0; //how many keys the player currently has
+    public int hasKey = 0; //how many keys the player currently has
 
 
     public Player(GamePanel gp, KeyHandler keyH){
@@ -124,7 +124,7 @@ public class Player extends Entity{
                     gp.playSE(1); //coin sound
                     hasKey++;
                     gp.obj[i] = null; //the object disappear when player touch it
-                    System.out.println("Key: " + hasKey);
+                    gp.ui.showMessage("You got a key!");
                     break;
                 case "Door":
                     gp.playSE(3); //unlock sound
@@ -132,13 +132,18 @@ public class Player extends Entity{
                     if(hasKey > 0){
                         gp.obj[i] = null;
                         hasKey--;
+                        gp.ui.showMessage("You opened the door!");
                     }
-                    System.out.println("Key: " + hasKey);
+                    else{
+                        gp.ui.showMessage("You need a key!");
+                    }
+
                     break;
                 case "Boots": //boots increase player speed
                     gp.playSE(2); //powerup sound
                     speed += 2;
                     gp.obj[i] = null;
+                    gp.ui.showMessage("Speed up!");
                     break;
             }
         }
