@@ -145,6 +145,11 @@ public class Player extends Entity{
                     gp.obj[i] = null;
                     gp.ui.showMessage("Speed up!");
                     break;
+                case "Chest": //if the player take the chest -> win the game! = stop the game
+                    gp.ui.gameFinished = true;
+                    gp.stopMusic();
+                    gp.playSE(4);
+                    break;
             }
         }
     }
