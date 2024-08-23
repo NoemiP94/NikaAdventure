@@ -2,6 +2,7 @@ package entity;
 
 import main.GamePanel;
 import main.KeyHandler;
+import main.UtilityTool;
 
 import javax.imageio.ImageIO;
 import java.awt.*;
@@ -45,18 +46,27 @@ public class Player extends Entity{
 
     //load player images
     public void getPlayerImage(){
-        try {
-            up1 = ImageIO.read(getClass().getResourceAsStream("/player/nika_up1.png"));
-            up2 = ImageIO.read(getClass().getResourceAsStream("/player/nika_up2.png"));
-            down1 = ImageIO.read(getClass().getResourceAsStream("/player/nika_down-1.png"));
-            down2 = ImageIO.read(getClass().getResourceAsStream("/player/nika_down-2.png"));
-            left1 = ImageIO.read(getClass().getResourceAsStream("/player/nika_left_run1.png"));
-            left2 = ImageIO.read(getClass().getResourceAsStream("/player/nika_left_run2.png"));
-            right1 = ImageIO.read(getClass().getResourceAsStream("/player/nika_right_run1.png"));
-            right2 = ImageIO.read(getClass().getResourceAsStream("/player/nika_right_run2.png"));
-        } catch (IOException e){
+        up1 = setup("nika_up1");
+        up2 = setup("nika_up2");
+        down1 = setup("nika_down-1");
+        down2 = setup("nika_down-2");
+        left1 = setup("nika_left_run1");
+        left2 = setup("nika_left_run2");
+        right1 = setup("nika_right_run1");
+        right2 = setup("nika_right_run2");
+    }
+
+    public BufferedImage setup(String imageName){
+        UtilityTool uTool = new UtilityTool();
+        BufferedImage image = null;
+
+        try{
+            image =ImageIO.read(getClass().getResourceAsStream("/player/"+ imageName +".png"));
+            image = uTool.scaledImage(image, gp.tileSize, gp.tileSize);
+        }catch(IOException e){
             e.printStackTrace();
         }
+        return image;
     }
 
     public void update(){
@@ -192,6 +202,6 @@ public class Player extends Entity{
                 }
                 break;
         }
-        g2.drawImage(image, screenX,screenY, gp.tileSize, gp.tileSize, null);
+        g2.drawImage(image, screenX,screenY,  null);
     }
 }
