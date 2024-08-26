@@ -14,7 +14,7 @@ public class Player extends Entity{
     KeyHandler keyH;
     public final int screenX;
     public final int screenY;
-    public int hasKey = 0; //how many keys the player currently has
+    //public int hasKey = 0; //how many keys the player currently has
 
 
     public Player(GamePanel gp, KeyHandler keyH){
@@ -128,7 +128,7 @@ public class Player extends Entity{
 
     public void pickUpObject(int i){
         if(i != 999){
-            String objectName = gp.obj[i].name;
+            /*String objectName = gp.obj[i].name;
             switch(objectName){
                 case "Key":
                     gp.playSE(1); //coin sound
@@ -160,7 +160,7 @@ public class Player extends Entity{
                     gp.stopMusic();
                     gp.playSE(4);
                     break;
-            }
+            }*/
         }
     }
     public void draw(Graphics2D g2){
