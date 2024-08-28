@@ -10,7 +10,7 @@ import java.awt.image.BufferedImage;
 import java.io.IOException;
 
 public class Player extends Entity{
-    GamePanel gp;
+
     KeyHandler keyH;
     public final int screenX;
     public final int screenY;
@@ -18,7 +18,8 @@ public class Player extends Entity{
 
 
     public Player(GamePanel gp, KeyHandler keyH){
-        this.gp = gp;
+        super(gp);
+
         this.keyH = keyH;
         screenX = gp.screenWidth/2 - (gp.tileSize/2);
         screenY = gp.screenHeight/2 - (gp.tileSize/2);
@@ -46,28 +47,16 @@ public class Player extends Entity{
 
     //load player images
     public void getPlayerImage(){
-        up1 = setup("nika_up1");
-        up2 = setup("nika_up2");
-        down1 = setup("nika_down-1");
-        down2 = setup("nika_down-2");
-        left1 = setup("nika_left_run1");
-        left2 = setup("nika_left_run2");
-        right1 = setup("nika_right_run1");
-        right2 = setup("nika_right_run2");
+        up1 = setup("/player/nika_up1");
+        up2 = setup("/player/nika_up2");
+        down1 = setup("/player/nika_down-1");
+        down2 = setup("/player/nika_down-2");
+        left1 = setup("/player/nika_left_run1");
+        left2 = setup("/player/nika_left_run2");
+        right1 = setup("/player/nika_right_run1");
+        right2 = setup("/player/nika_right_run2");
     }
 
-    public BufferedImage setup(String imageName){
-        UtilityTool uTool = new UtilityTool();
-        BufferedImage image = null;
-
-        try{
-            image =ImageIO.read(getClass().getResourceAsStream("/player/"+ imageName +".png"));
-            image = uTool.scaledImage(image, gp.tileSize, gp.tileSize);
-        }catch(IOException e){
-            e.printStackTrace();
-        }
-        return image;
-    }
 
     public void update(){
         if(keyH.upPressed == true || keyH.downPressed == true ||
