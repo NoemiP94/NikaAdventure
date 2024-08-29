@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6688bab-d039-4b46-9b3f-6184f520bb9a" name="Changes" comment="dialogues">
-      <change afterPath="$PROJECT_DIR$/res/font/Purisa Bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/font/RobotoMono-VariableFont_wght.ttf" afterDir="false" />
+    <list default="true" id="e6688bab-d039-4b46-9b3f-6184f520bb9a" name="Changes" comment="custom font">
+      <change afterPath="$PROJECT_DIR$/res/font/PixelifySans-VariableFont_wght.ttf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/NPC_OldMan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/NPC_OldMan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/GamePanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/KeyHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/KeyHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/UI.java" afterDir="false" />
     </list>
@@ -229,7 +228,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724918087870</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="custom font">
+      <option name="closed" value="true" />
+      <created>1724920453029</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1724920453029</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -250,6 +257,7 @@
     <MESSAGE value="draw npc" />
     <MESSAGE value="npc collision" />
     <MESSAGE value="dialogues" />
-    <option name="LAST_COMMIT_MESSAGE" value="dialogues" />
+    <MESSAGE value="custom font" />
+    <option name="LAST_COMMIT_MESSAGE" value="custom font" />
   </component>
 </project>
