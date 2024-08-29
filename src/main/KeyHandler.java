@@ -60,7 +60,7 @@ public class KeyHandler implements KeyListener {//interface for receiving keyboa
             }
         }
         //DIALOGUE STATE
-        else if(gp.gameState == gp.dialogueState){
+        else if(gp.gameState == gp.dialogueState){ //if the user press ENTER
             if(code == KeyEvent.VK_ENTER){
                 gp.gameState = gp.playState;
             }
