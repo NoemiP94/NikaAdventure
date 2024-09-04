@@ -91,6 +91,8 @@ public class Player extends Entity{
             //CHECK EVENT
             gp.eHandler.checkEvent();
 
+            gp.keyH.enterPressed = false;
+
             //IF COLLISION IS FALSE, PLAYER CAN MOVE
             if(collisionOn == false){
                 switch(direction){
@@ -172,7 +174,7 @@ public class Player extends Entity{
             }
 
         }
-        gp.keyH.enterPressed = false;
+
     }
     public void draw(Graphics2D g2){
        // g2.setColor(Color.white);

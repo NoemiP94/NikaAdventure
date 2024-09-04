@@ -23,6 +23,9 @@ public class EventHandler {
             //event happens
             damagePit(gp.dialogueState);
         }
+        if(hit(23,12,"up") == true){
+            healingPool(gp.dialogueState);
+        }
     }
 
     //check event collision
@@ -58,5 +61,15 @@ public class EventHandler {
         gp.player.life -= 1;
     }
 
+
+    public void healingPool(int gameState){
+        if(gp.keyH.enterPressed == true){
+            gp.gameState = gameState;
+            gp.ui.currentDialogue = ("You drink the water. \nYour life has been recovered.");
+            gp.player.life = gp.player.maxLife;
+
+        }
+
+    }
 
 }
