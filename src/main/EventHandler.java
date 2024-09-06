@@ -48,10 +48,7 @@ public class EventHandler {
                 //event happens
                 damagePit(24,16,gp.dialogueState);
             }
-            if(hit(23,19,"any") == true){
-                //event happens
-                damagePit(23,19,gp.dialogueState);
-            }
+
             if(hit(23,12,"up") == true){
                 healingPool(23,12,gp.dialogueState);
             }
