@@ -4,28 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6688bab-d039-4b46-9b3f-6184f520bb9a" name="Changes" comment="monster">
-      <change afterPath="$PROJECT_DIR$/res/player/nika_attack_down_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/player/nika_attack_down_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/player/nika_attack_left_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/player/nika_attack_left_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/player/nika_attack_right_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/player/nika_attack_right_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/player/nika_attack_up_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/player/nika_attack_up_2.png" afterDir="false" />
+    <list default="true" id="e6688bab-d039-4b46-9b3f-6184f520bb9a" name="Changes" comment="hit detection">
+      <change afterPath="$PROJECT_DIR$/res/sound/hitmonster.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/sound/receivedamage.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/sound/swingweapon.wav" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/entity/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Entity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/NPC_OldMan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/NPC_OldMan.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/entity/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/EventHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/EventHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/GamePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/KeyHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/KeyHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Sound.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Sound.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/monster/MON_GreenSlime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/monster/MON_GreenSlime.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/object/OBJ_Boots.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/OBJ_Boots.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/object/OBJ_Chest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/OBJ_Chest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/object/OBJ_Door.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/OBJ_Door.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/object/OBJ_Heart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/OBJ_Heart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/object/OBJ_Key.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/OBJ_Key.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,11 +65,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\m_emi\OneDrive\Desktop\NikaAdventure\res\sound" />
       <recent name="C:\Users\m_emi\OneDrive\Desktop\NikaAdventure\res\player" />
       <recent name="C:\Users\m_emi\OneDrive\Desktop\NikaAdventure\res\monster" />
       <recent name="C:\Users\m_emi\OneDrive\Desktop\NikaAdventure\res\objects" />
       <recent name="C:\Users\m_emi\OneDrive\Desktop\NikaAdventure\res\font" />
-      <recent name="C:\Users\m_emi\OneDrive\Desktop\NikaAdventure\res\npc" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -308,11 +296,18 @@
       <option name="project" value="LOCAL" />
       <updated>1725467822991</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="hit detection">
+      <option name="closed" value="true" />
+      <created>1725620397416</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1725620397416</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="game loop and key input" />
     <MESSAGE value="add entity" />
     <MESSAGE value="add sprites and animation" />
     <MESSAGE value="drawing tiles" />
@@ -337,6 +332,7 @@
     <MESSAGE value="advanced event" />
     <MESSAGE value="improve render order" />
     <MESSAGE value="monster" />
-    <option name="LAST_COMMIT_MESSAGE" value="monster" />
+    <MESSAGE value="hit detection" />
+    <option name="LAST_COMMIT_MESSAGE" value="hit detection" />
   </component>
 </project>
