@@ -2,18 +2,19 @@ package entity;
 
 import main.GamePanel;
 import main.KeyHandler;
-import main.UtilityTool;
+import object.OBJ_Shield_Wood;
+import object.OBJ_Sword_Normal;
 
-import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.BufferedImage;
-import java.io.IOException;
+
 
 public class Player extends Entity{
 
     KeyHandler keyH;
     public final int screenX;
     public final int screenY;
+    public boolean attackCanceled = false;
     //public int hasKey = 0; //how many keys the player currently has
 
 
@@ -50,8 +51,26 @@ public class Player extends Entity{
         direction = "down";
 
         //PLAYER STATUS -> 1 life = 2 hearts
+        level = 1;
         maxLife = 6;
         life = maxLife;
+        strength = 1; //more strength, more damage he gives
+        dexterity = 1; //more dexterity, less damage receive
+        exp = 0;
+        nextLevelExp = 5;
+        coin = 0;
+        currentWeapon = new OBJ_Sword_Normal(gp);
+        currentShield = new OBJ_Shield_Wood(gp);
+        attack = getAttack(); // total attack value = strength + weapon
+        defense = getDefense(); // total defense = dexterity + shield
+
+    }
+
+    public int getAttack(){
+        return attack = strength * currentWeapon.attackValue;
+    }
+    public int getDefense(){
+        return defense = dexterity * currentShield.defenseValue;
     }
 
     //load player images
@@ -136,6 +155,14 @@ attacking();
                         break;
                 }
             }
+
+            if(keyH.enterPressed == true && attackCanceled == false){
+                gp.playSE(7);
+                attacking = true;
+                spriteCounter = 0;
+            }
+
+            attackCanceled = false;
 
             gp.keyH.enterPressed = false;
 
@@ -258,11 +285,10 @@ attacking();
 
         if(gp.keyH.enterPressed == true){
             if(i != 999){
+                 attackCanceled = true;
                  gp.gameState = gp.dialogueState;
                  gp.npc[i].speak();
-            } else {
-                 gp.playSE(7);
-                 attacking = true;
+
             }
         }
     }

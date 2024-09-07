@@ -4,15 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6688bab-d039-4b46-9b3f-6184f520bb9a" name="Changes" comment="hit detection">
-      <change afterPath="$PROJECT_DIR$/res/sound/hitmonster.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/sound/receivedamage.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/sound/swingweapon.wav" afterDir="false" />
+    <list default="true" id="e6688bab-d039-4b46-9b3f-6184f520bb9a" name="Changes" comment="health bar &amp; death animation">
+      <change afterPath="$PROJECT_DIR$/res/objects/shield_wood.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/objects/sword_normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/sound/LittleSlimexAdventure.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/object/OBJ_Shield_Wood.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/object/OBJ_Sword_Normal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/sound/BlueBoyAdventure.wav" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/entity/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Entity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/entity/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/EventHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/EventHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/GamePanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/KeyHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/KeyHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/Sound.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Sound.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/UI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/monster/MON_GreenSlime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/monster/MON_GreenSlime.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -65,10 +71,10 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\m_emi\OneDrive\Desktop\NikaAdventure\res\objects" />
       <recent name="C:\Users\m_emi\OneDrive\Desktop\NikaAdventure\res\sound" />
       <recent name="C:\Users\m_emi\OneDrive\Desktop\NikaAdventure\res\player" />
       <recent name="C:\Users\m_emi\OneDrive\Desktop\NikaAdventure\res\monster" />
-      <recent name="C:\Users\m_emi\OneDrive\Desktop\NikaAdventure\res\objects" />
       <recent name="C:\Users\m_emi\OneDrive\Desktop\NikaAdventure\res\font" />
     </key>
   </component>
@@ -304,11 +310,18 @@
       <option name="project" value="LOCAL" />
       <updated>1725620397416</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="health bar &amp; death animation">
+      <option name="closed" value="true" />
+      <created>1725701369826</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1725701369826</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add entity" />
     <MESSAGE value="add sprites and animation" />
     <MESSAGE value="drawing tiles" />
     <MESSAGE value="world and camera" />
@@ -333,6 +346,7 @@
     <MESSAGE value="improve render order" />
     <MESSAGE value="monster" />
     <MESSAGE value="hit detection" />
-    <option name="LAST_COMMIT_MESSAGE" value="hit detection" />
+    <MESSAGE value="health bar &amp; death animation" />
+    <option name="LAST_COMMIT_MESSAGE" value="health bar &amp; death animation" />
   </component>
 </project>
