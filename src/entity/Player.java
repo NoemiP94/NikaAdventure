@@ -101,7 +101,7 @@ public class Player extends Entity{
 
         if(attacking == true){
 
-attacking();
+        attacking();
 
         } else if(keyH.upPressed == true || keyH.downPressed == true ||
         keyH.leftPressed == true || keyH.rightPressed == true || keyH.enterPressed == true) {
@@ -297,7 +297,11 @@ attacking();
         if(i != 999){
             if(invincible == false){
                 gp.playSE(6);
-                life -= 1;
+                int damage = attack + gp.monster[i].attack - defense;
+                if(damage <= 0){
+                    damage = 0;
+                }
+                life -= damage;
                 invincible = true;
             }
 
@@ -308,14 +312,42 @@ attacking();
         if(i != 999){
            if(gp.monster[i].invincible == false){
                gp.playSE(5);
-               gp.monster[i].life -= 1;
+
+               int damage = attack - gp.monster[i].defense;
+               if(damage <= 0){
+                   damage = 0;
+               }
+               gp.monster[i].life -= damage;
+               gp.ui.addMessage(damage + "damage!");
                gp.monster[i].invincible = true;
                gp.monster[i].damageReaction();
 
                if(gp.monster[i].life <= 0){
                    gp.monster[i].dying = true;
+                   gp.ui.addMessage("Killed the " + gp.monster[i].name + "!");
+                   gp.ui.addMessage("Exp" + gp.monster[i].exp);
+                   exp += gp.monster[i].exp;
+                   checkLevelUp();
+
                }
            }
+        }
+    }
+
+    public void checkLevelUp(){
+        if(exp >= nextLevelExp){
+            level++;
+            nextLevelExp = nextLevelExp*2;
+            maxLife += 2; //1 heart
+            strength++;
+            dexterity++;
+            attack = getAttack(); //recalculate attack
+            defense = getDefense(); //recalculate defense
+            gp.playSE(8);
+
+            gp.gameState = gp.dialogueState;
+            gp.ui.currentDialogue = "You are level " + level + " now!\n" + "You feel stronger!";
+
         }
     }
     public void draw(Graphics2D g2){
