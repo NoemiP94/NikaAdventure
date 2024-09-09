@@ -254,39 +254,16 @@ public class Player extends Entity{
 
     public void pickUpObject(int i){
         if(i != 999){
-            /*String objectName = gp.obj[i].name;
-            switch(objectName){
-                case "Key":
-                    gp.playSE(1); //coin sound
-                    hasKey++;
-                    gp.obj[i] = null; //the object disappear when player touch it
-                    gp.ui.showMessage("You got a key!");
-                    break;
-                case "Door":
-                    gp.playSE(3); //unlock sound
-                    //if player has a key the door disappear and decrements the number of key
-                    if(hasKey > 0){
-                        gp.obj[i] = null;
-                        hasKey--;
-                        gp.ui.showMessage("You opened the door!");
-                    }
-                    else{
-                        gp.ui.showMessage("You need a key!");
-                    }
-
-                    break;
-                case "Boots": //boots increase player speed
-                    gp.playSE(2); //powerup sound
-                    speed += 2;
-                    gp.obj[i] = null;
-                    gp.ui.showMessage("Speed up!");
-                    break;
-                case "Chest": //if the player take the chest -> win the game! = stop the game
-                    gp.ui.gameFinished = true;
-                    gp.stopMusic();
-                    gp.playSE(4);
-                    break;
-            }*/
+            String text;
+            if(inventory.size() != maxInventorySize){ //if inventory is not full
+                inventory.add(gp.obj[i]);
+                gp.playSE(1);
+                text = "Got a " + gp.obj[i].name + "!";
+            } else {
+                text = "You cannot carry any more!";
+            }
+            gp.ui.addMessage(text);
+            gp.obj[i] = null;
         }
     }
 
