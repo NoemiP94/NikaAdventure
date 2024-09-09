@@ -29,6 +29,10 @@ public class AssetSetter {
         gp.obj[i].worldX = 33 * gp.tileSize;
         gp.obj[i].worldY = 21 * gp.tileSize;
         i++;
+        gp.obj[i] = new OBJ_Shield_Blue(gp);
+        gp.obj[i].worldX = 35 * gp.tileSize;
+        gp.obj[i].worldY = 21 * gp.tileSize;
+        i++;
 
         /*
 
