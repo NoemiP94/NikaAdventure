@@ -100,6 +100,7 @@ public class Entity { //abstract class
                 break;
         }
     }
+    public void use(Entity entity){}
     public void update(){
         setAction();
         collisionOn = false;
