@@ -37,9 +37,9 @@ public class Player extends Entity{
         solidAreaDefaultY = solidArea.y;
         solidArea.width = 32;
         solidArea.height = 32;
-
-        attackArea.width = 36;
-        attackArea.height = 36;
+        //attack area
+        //attackArea.width = 36;
+        //attackArea.height = 36;
 
         setDefaultValues();
         getPlayerImage();
@@ -76,6 +76,7 @@ public class Player extends Entity{
         inventory.add(new OBJ_Key(gp));
     }
     public int getAttack(){
+        attackArea = currentWeapon.attackArea;
         return attack = strength * currentWeapon.attackValue;
     }
     public int getDefense(){
@@ -334,6 +335,25 @@ public class Player extends Entity{
             gp.gameState = gp.dialogueState;
             gp.ui.currentDialogue = "You are level " + level + " now!\n" + "You feel stronger!";
 
+        }
+    }
+
+    public void selectItem(){
+        int itemIndex = gp.ui.getItemIndexOnSlot();
+        if(itemIndex < inventory.size()){
+            Entity selectedItem = inventory.get(itemIndex);
+            //if we are selected an item we check its type
+            if(selectedItem.type == type_sword || selectedItem.type == type_axe){
+                currentWeapon = selectedItem;
+                attack = getAttack();
+            }
+            if(selectedItem.type == type_shield){
+                currentShield = selectedItem;
+                defense = getDefense();
+            }
+            if(selectedItem.type == type_consumable){
+                //later
+            }
         }
     }
     public void draw(Graphics2D g2){

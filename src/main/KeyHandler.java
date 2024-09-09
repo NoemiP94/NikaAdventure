@@ -144,6 +144,9 @@ public class KeyHandler implements KeyListener {//interface for receiving keyboa
                 gp.playSE(9);
             }
         }
+        if(code == KeyEvent.VK_ENTER){
+            gp.player.selectItem();
+        }
     }
 
     @Override

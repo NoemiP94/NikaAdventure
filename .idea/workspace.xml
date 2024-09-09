@@ -4,10 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6688bab-d039-4b46-9b3f-6184f520bb9a" name="Changes" comment="inventory">
+    <list default="true" id="e6688bab-d039-4b46-9b3f-6184f520bb9a" name="Changes" comment="picking up items">
+      <change afterPath="$PROJECT_DIR$/res/objects/axe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/objects/shield_blue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/object/OBJ_Axe.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Entity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/AssetSetter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/AssetSetter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/UI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/monster/MON_GreenSlime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/monster/MON_GreenSlime.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/object/OBJ_Shield_Wood.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/OBJ_Shield_Wood.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/object/OBJ_Sword_Normal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/OBJ_Sword_Normal.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,8 +67,8 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\m_emi\OneDrive\Desktop\NikaAdventure\res\sound" />
       <recent name="C:\Users\m_emi\OneDrive\Desktop\NikaAdventure\res\objects" />
+      <recent name="C:\Users\m_emi\OneDrive\Desktop\NikaAdventure\res\sound" />
       <recent name="C:\Users\m_emi\OneDrive\Desktop\NikaAdventure\res\player" />
       <recent name="C:\Users\m_emi\OneDrive\Desktop\NikaAdventure\res\monster" />
       <recent name="C:\Users\m_emi\OneDrive\Desktop\NikaAdventure\res\font" />
@@ -338,11 +346,18 @@
       <option name="project" value="LOCAL" />
       <updated>1725871959913</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="picking up items">
+      <option name="closed" value="true" />
+      <created>1725874329495</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1725874329495</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="object placement" />
     <MESSAGE value="object interaction" />
     <MESSAGE value="sound" />
     <MESSAGE value="add message" />
@@ -367,6 +382,7 @@
     <MESSAGE value="scrolling message, leveling up, damage calculation" />
     <MESSAGE value="debug useful functions" />
     <MESSAGE value="inventory" />
-    <option name="LAST_COMMIT_MESSAGE" value="inventory" />
+    <MESSAGE value="picking up items" />
+    <option name="LAST_COMMIT_MESSAGE" value="picking up items" />
   </component>
 </project>

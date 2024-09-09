@@ -2,10 +2,7 @@ package main;
 
 import entity.NPC_OldMan;
 import monster.MON_GreenSlime;
-import object.OBJ_Boots;
-import object.OBJ_Chest;
-import object.OBJ_Door;
-import object.OBJ_Key;
+import object.*;
 
 public class AssetSetter {
     GamePanel gp;
@@ -28,6 +25,11 @@ public class AssetSetter {
         gp.obj[i].worldX = 26 * gp.tileSize;
         gp.obj[i].worldY = 21 * gp.tileSize;
         i++;
+        gp.obj[i] = new OBJ_Axe(gp);
+        gp.obj[i].worldX = 33 * gp.tileSize;
+        gp.obj[i].worldY = 21 * gp.tileSize;
+        i++;
+
         /*
 
         gp.obj[1] = new OBJ_Key(gp);
