@@ -13,15 +13,15 @@ public class AssetSetter {
     //create and place objects in the map
     public void setObject(){
         int i = 0;
-        gp.obj[i] = new OBJ_Key(gp);
+        gp.obj[i] = new OBJ_Coin_Bronze(gp);
         gp.obj[i].worldX = 25 * gp.tileSize;
         gp.obj[i].worldY = 19 * gp.tileSize;
         i++;
-        gp.obj[i] = new OBJ_Key(gp);
+        gp.obj[i] = new OBJ_Coin_Bronze(gp);
         gp.obj[i].worldX = 21 * gp.tileSize;
         gp.obj[i].worldY = 19 * gp.tileSize;
         i++;
-        gp.obj[i] = new OBJ_Key(gp);
+        gp.obj[i] = new OBJ_Coin_Bronze(gp);
         gp.obj[i].worldX = 26 * gp.tileSize;
         gp.obj[i].worldY = 21 * gp.tileSize;
         i++;
@@ -37,37 +37,15 @@ public class AssetSetter {
         gp.obj[i].worldX = 22 * gp.tileSize;
         gp.obj[i].worldY = 27 * gp.tileSize;
         i++;
+        gp.obj[i] = new OBJ_Heart(gp);
+        gp.obj[i].worldX = 22 * gp.tileSize;
+        gp.obj[i].worldY = 29 * gp.tileSize;
+        i++;
+        gp.obj[i] = new OBJ_Mana_Crystal(gp);
+        gp.obj[i].worldX = 22 * gp.tileSize;
+        gp.obj[i].worldY = 31 * gp.tileSize;
+        i++;
 
-        /*
-
-        gp.obj[1] = new OBJ_Key(gp);
-        gp.obj[1].worldX = 23 * gp.tileSize;
-        gp.obj[1].worldY = 40 * gp.tileSize;
-
-        gp.obj[2] = new OBJ_Key(gp);
-        gp.obj[2].worldX = 38 * gp.tileSize;
-        gp.obj[2].worldY = 8 * gp.tileSize;
-
-        gp.obj[0] = new OBJ_Door(gp);
-        gp.obj[0].worldX = 21 * gp.tileSize;
-        gp.obj[0].worldY = 22 * gp.tileSize;
-
-        gp.obj[1] = new OBJ_Door(gp);
-        gp.obj[1].worldX = 23 * gp.tileSize;
-        gp.obj[1].worldY = 25 * gp.tileSize;
-
-        gp.obj[5] = new OBJ_Door(gp);
-        gp.obj[5].worldX = 12 * gp.tileSize;
-        gp.obj[5].worldY = 23 * gp.tileSize;
-
-        gp.obj[6] = new OBJ_Chest(gp);
-        gp.obj[6].worldX = 10 * gp.tileSize;
-        gp.obj[6].worldY = 8 * gp.tileSize;
-
-        gp.obj[7] = new OBJ_Boots(gp);
-        gp.obj[7].worldX = 37 * gp.tileSize;
-        gp.obj[7].worldY = 42 * gp.tileSize;
-*/
     }
 
     public void setNPC(){
