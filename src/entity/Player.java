@@ -2,6 +2,7 @@ package entity;
 
 import main.GamePanel;
 import main.KeyHandler;
+import object.OBJ_Fireball;
 import object.OBJ_Key;
 import object.OBJ_Shield_Wood;
 import object.OBJ_Sword_Normal;
@@ -66,6 +67,7 @@ public class Player extends Entity{
         coin = 0;
         currentWeapon = new OBJ_Sword_Normal(gp);
         currentShield = new OBJ_Shield_Wood(gp);
+        projectile = new OBJ_Fireball(gp);
         attack = getAttack(); // total attack value = strength + weapon
         defense = getDefense(); // total defense = dexterity + shield
 
@@ -202,6 +204,16 @@ public class Player extends Entity{
             }
         }
 
+        if(gp.keyH.shotKeyPressed == true && projectile.alive == false && shotAvailableCounter == 30){ //you cannot shoot a projectile if the previous projectile is still alive
+            //set default coordinate, direction and user
+            projectile.set(worldX, worldY, direction, true, this);
+
+            //add it to the list
+            gp.projectileList.add(projectile);
+            shotAvailableCounter = 0;
+            gp.playSE(10);
+        }
+
         //this needs to be outside of key if statement
         if(invincible == true){
             invincibleCounter++;
@@ -209,6 +221,11 @@ public class Player extends Entity{
                 invincible = false;
                 invincibleCounter = 0;
             }
+        }
+
+        //you can't shoot another projectile in the next 30 seconds
+        if(shotAvailableCounter < 30){
+            shotAvailableCounter++;
         }
 
     }
@@ -250,7 +267,7 @@ public class Player extends Entity{
             solidArea.height = attackArea.height;
             //check monster collision with the updated worldX, worldY and solidArea
             int monsterIndex = gp.cChecker.checkEntity(this, gp.monster);
-            damageMonster(monsterIndex);
+            damageMonster(monsterIndex, attack); //sword or axe attack
             worldX = currentWorldX;
             worldY = currentWorldY;
             //after checking collision, restore the original data
@@ -295,7 +312,7 @@ public class Player extends Entity{
 
     public void contactMonster(int i){
         if(i != 999){
-            if(invincible == false){
+            if(invincible == false && gp.monster[i].dying == false){
                 gp.playSE(6);
                 int damage = attack + gp.monster[i].attack - defense;
                 if(damage <= 0){
@@ -308,7 +325,7 @@ public class Player extends Entity{
         }
     }
 
-    public void damageMonster(int i){
+    public void damageMonster(int i, int attack){
         if(i != 999){
            if(gp.monster[i].invincible == false){
                gp.playSE(5);

@@ -4,10 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6688bab-d039-4b46-9b3f-6184f520bb9a" name="Changes" comment="implement axe animation">
-      <change afterPath="$PROJECT_DIR$/res/objects/potion_red.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/object/OBJ_Potion_Red.java" afterDir="false" />
+    <list default="true" id="e6688bab-d039-4b46-9b3f-6184f520bb9a" name="Changes" comment="using items">
+      <change afterPath="$PROJECT_DIR$/res/projectile/fireball_down_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/projectile/fireball_down_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/projectile/fireball_left_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/projectile/fireball_left_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/projectile/fireball_right_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/projectile/fireball_right_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/projectile/fireball_up_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/projectile/fireball_up_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/sound/burning.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entity/Projectile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/object/OBJ_Fireball.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Entity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/GamePanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/KeyHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/KeyHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Sound.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Sound.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,11 +73,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\m_emi\OneDrive\Desktop\NikaAdventure\res\sound" />
+      <recent name="C:\Users\m_emi\OneDrive\Desktop\NikaAdventure\res\projectile" />
       <recent name="C:\Users\m_emi\OneDrive\Desktop\NikaAdventure\res\objects" />
       <recent name="C:\Users\m_emi\OneDrive\Desktop\NikaAdventure\res\player" />
-      <recent name="C:\Users\m_emi\OneDrive\Desktop\NikaAdventure\res\sound" />
       <recent name="C:\Users\m_emi\OneDrive\Desktop\NikaAdventure\res\monster" />
-      <recent name="C:\Users\m_emi\OneDrive\Desktop\NikaAdventure\res\font" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -362,11 +376,18 @@
       <option name="project" value="LOCAL" />
       <updated>1725877886316</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="using items">
+      <option name="closed" value="true" />
+      <created>1725878532045</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1725878532045</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add message" />
     <MESSAGE value="finish first half of game" />
     <MESSAGE value="improving rendering performance" />
     <MESSAGE value="add new tileset" />
@@ -391,6 +412,7 @@
     <MESSAGE value="picking up items" />
     <MESSAGE value="switching equipment" />
     <MESSAGE value="implement axe animation" />
-    <option name="LAST_COMMIT_MESSAGE" value="implement axe animation" />
+    <MESSAGE value="using items" />
+    <option name="LAST_COMMIT_MESSAGE" value="using items" />
   </component>
 </project>

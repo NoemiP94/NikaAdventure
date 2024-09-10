@@ -5,7 +5,7 @@ import java.awt.event.KeyListener;
 
 public class KeyHandler implements KeyListener {//interface for receiving keyboard events
     GamePanel gp;
-    public boolean upPressed, downPressed, leftPressed, rightPressed, enterPressed;
+    public boolean upPressed, downPressed, leftPressed, rightPressed, enterPressed, shotKeyPressed;
     //DEBUG
     boolean showDebugText = false;
 
@@ -91,6 +91,9 @@ public class KeyHandler implements KeyListener {//interface for receiving keyboa
         if(code == KeyEvent.VK_ENTER) { //if the user press ENTER
             enterPressed = true;
         }
+        if(code == KeyEvent.VK_F) { //if the user press F
+            shotKeyPressed = true;
+        }
 
 
 
@@ -163,6 +166,9 @@ public class KeyHandler implements KeyListener {//interface for receiving keyboa
         }
         if(code == KeyEvent.VK_D) { //if the user press D
             rightPressed = false;
+        }
+        if(code == KeyEvent.VK_F) { //if the user press F
+            shotKeyPressed = false;
         }
     }
 }

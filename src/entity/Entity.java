@@ -36,6 +36,7 @@ public class Entity { //abstract class
     public int spriteCounter = 0;
     public int actionLockCounter;
     public int invincibleCounter = 0;
+    public int shotAvailableCounter = 0;
     int dyingCounter = 0;
     int hpBarCounter = 0;
 
@@ -45,6 +46,8 @@ public class Entity { //abstract class
     public int speed;
     public int maxLife;
     public int life;
+    public int maxMana;
+    public int mana;
     public int level;
     public int strength;
     public int dexterity;
@@ -55,12 +58,14 @@ public class Entity { //abstract class
     public int coin;
     public Entity currentWeapon;
     public Entity currentShield;
+    public Projectile projectile;
 
 
     //ITEM ATTRIBUTES
     public int attackValue;
     public int defenseValue;
     public String description = "";
+    public int useCost;
 
     //TYPE
     public int type;
@@ -269,7 +274,6 @@ public class Entity { //abstract class
             changeAlpha(g2, 1f);
         }
         if(dyingCounter > i*8){
-            dying = false;
             alive = false;
         }
     }
