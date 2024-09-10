@@ -64,4 +64,13 @@ public class Projectile extends Entity{
             spriteCounter = 0;
         }
     }
+    public boolean haveResource(Entity user){
+        boolean haveResource = false;
+        return haveResource;
+    }
+
+    public void subtractResource(Entity user){
+
+
+    }
 }

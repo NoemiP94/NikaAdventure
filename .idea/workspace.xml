@@ -4,13 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6688bab-d039-4b46-9b3f-6184f520bb9a" name="Changes" comment="projectiles">
-      <change afterPath="$PROJECT_DIR$/res/projectile/rock_down_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/object/OBJ_Rock.java" afterDir="false" />
+    <list default="true" id="e6688bab-d039-4b46-9b3f-6184f520bb9a" name="Changes" comment="monster projectiles">
+      <change afterPath="$PROJECT_DIR$/res/objects/manacrystal_blank.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/objects/manacrystal_full.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/object/OBJ_Mana_Crystal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/entity/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Entity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/entity/Projectile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Projectile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/monster/MON_GreenSlime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/monster/MON_GreenSlime.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/EventHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/EventHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/UI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/object/OBJ_Fireball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/OBJ_Fireball.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/object/OBJ_Rock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/OBJ_Rock.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,9 +67,9 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\m_emi\OneDrive\Desktop\NikaAdventure\res\objects" />
       <recent name="C:\Users\m_emi\OneDrive\Desktop\NikaAdventure\res\projectile" />
       <recent name="C:\Users\m_emi\OneDrive\Desktop\NikaAdventure\res\sound" />
-      <recent name="C:\Users\m_emi\OneDrive\Desktop\NikaAdventure\res\objects" />
       <recent name="C:\Users\m_emi\OneDrive\Desktop\NikaAdventure\res\player" />
       <recent name="C:\Users\m_emi\OneDrive\Desktop\NikaAdventure\res\monster" />
     </key>
@@ -381,11 +386,18 @@
       <option name="project" value="LOCAL" />
       <updated>1725956540108</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="monster projectiles">
+      <option name="closed" value="true" />
+      <created>1725957698180</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1725957698180</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="improving rendering performance" />
     <MESSAGE value="add new tileset" />
     <MESSAGE value="game state" />
     <MESSAGE value="draw npc" />
@@ -410,6 +422,7 @@
     <MESSAGE value="implement axe animation" />
     <MESSAGE value="using items" />
     <MESSAGE value="projectiles" />
-    <option name="LAST_COMMIT_MESSAGE" value="projectiles" />
+    <MESSAGE value="monster projectiles" />
+    <option name="LAST_COMMIT_MESSAGE" value="monster projectiles" />
   </component>
 </project>

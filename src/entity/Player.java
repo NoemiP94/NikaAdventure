@@ -2,10 +2,7 @@ package entity;
 
 import main.GamePanel;
 import main.KeyHandler;
-import object.OBJ_Fireball;
-import object.OBJ_Key;
-import object.OBJ_Shield_Wood;
-import object.OBJ_Sword_Normal;
+import object.*;
 
 import java.awt.*;
 import java.awt.image.BufferedImage;
@@ -60,6 +57,9 @@ public class Player extends Entity{
         level = 1;
         maxLife = 6;
         life = maxLife;
+        maxMana = 4;
+        mana = maxMana;
+        ammo = 10;
         strength = 1; //more strength, more damage he gives
         dexterity = 1; //more dexterity, less damage receive
         exp = 0;
@@ -68,6 +68,7 @@ public class Player extends Entity{
         currentWeapon = new OBJ_Sword_Normal(gp);
         currentShield = new OBJ_Shield_Wood(gp);
         projectile = new OBJ_Fireball(gp);
+        //projectile = new OBJ_Rock(gp);
         attack = getAttack(); // total attack value = strength + weapon
         defense = getDefense(); // total defense = dexterity + shield
 
@@ -204,9 +205,13 @@ public class Player extends Entity{
             }
         }
 
-        if(gp.keyH.shotKeyPressed == true && projectile.alive == false && shotAvailableCounter == 30){ //you cannot shoot a projectile if the previous projectile is still alive
+        if(gp.keyH.shotKeyPressed == true && projectile.alive == false
+                && shotAvailableCounter == 30 && projectile.haveResource(this) == true){ //you cannot shoot a projectile if the previous projectile is still alive
             //set default coordinate, direction and user
             projectile.set(worldX, worldY, direction, true, this);
+
+            //SUBTRACT COST
+            projectile.subtractResource(this);
 
             //add it to the list
             gp.projectileList.add(projectile);
