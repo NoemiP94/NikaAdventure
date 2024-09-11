@@ -4,19 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6688bab-d039-4b46-9b3f-6184f520bb9a" name="Changes" comment="mana">
-      <change afterPath="$PROJECT_DIR$/res/objects/coin_bronze.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/object/OBJ_Coin_Bronze.java" afterDir="false" />
+    <list default="true" id="e6688bab-d039-4b46-9b3f-6184f520bb9a" name="Changes" comment="item drops">
+      <change afterPath="$PROJECT_DIR$/res/sound/cuttree.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/tiles_interactive/drytree.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/tiles_interactive/trunk.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tile_interactive/IT_DryTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tile_interactive/IT_Trunk.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tile_interactive/InteractiveTile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Entity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/maps/worldV2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/res/maps/worldV2.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/entity/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/AssetSetter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/AssetSetter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/GamePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/UI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/monster/MON_GreenSlime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/monster/MON_GreenSlime.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/object/OBJ_Heart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/OBJ_Heart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/object/OBJ_Mana_Crystal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/OBJ_Mana_Crystal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/object/OBJ_Potion_Red.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/OBJ_Potion_Red.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Sound.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Sound.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,11 +68,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\m_emi\OneDrive\Desktop\NikaAdventure\res\sound" />
+      <recent name="C:\Users\m_emi\OneDrive\Desktop\NikaAdventure\res\tiles_interactive" />
       <recent name="C:\Users\m_emi\OneDrive\Desktop\NikaAdventure\res\objects" />
       <recent name="C:\Users\m_emi\OneDrive\Desktop\NikaAdventure\res\projectile" />
-      <recent name="C:\Users\m_emi\OneDrive\Desktop\NikaAdventure\res\sound" />
       <recent name="C:\Users\m_emi\OneDrive\Desktop\NikaAdventure\res\player" />
-      <recent name="C:\Users\m_emi\OneDrive\Desktop\NikaAdventure\res\monster" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -403,11 +403,18 @@
       <option name="project" value="LOCAL" />
       <updated>1725959925613</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="item drops">
+      <option name="closed" value="true" />
+      <created>1725963564094</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1725963564094</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="game state" />
     <MESSAGE value="draw npc" />
     <MESSAGE value="npc collision" />
     <MESSAGE value="dialogues" />
@@ -432,6 +439,7 @@
     <MESSAGE value="projectiles" />
     <MESSAGE value="monster projectiles" />
     <MESSAGE value="mana" />
-    <option name="LAST_COMMIT_MESSAGE" value="mana" />
+    <MESSAGE value="item drops" />
+    <option name="LAST_COMMIT_MESSAGE" value="item drops" />
   </component>
 </project>
