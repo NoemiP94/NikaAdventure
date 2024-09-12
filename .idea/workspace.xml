@@ -4,19 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6688bab-d039-4b46-9b3f-6184f520bb9a" name="Changes" comment="item drops">
-      <change afterPath="$PROJECT_DIR$/res/sound/cuttree.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/tiles_interactive/drytree.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/tiles_interactive/trunk.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tile_interactive/IT_DryTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tile_interactive/IT_Trunk.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tile_interactive/InteractiveTile.java" afterDir="false" />
+    <list default="true" id="e6688bab-d039-4b46-9b3f-6184f520bb9a" name="Changes" comment="breaking objects">
+      <change afterPath="$PROJECT_DIR$/src/entity/Particle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/maps/worldV2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/res/maps/worldV2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Entity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/entity/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/AssetSetter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/AssetSetter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/Projectile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Projectile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/GamePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Sound.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Sound.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tile_interactive/IT_DryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tile_interactive/IT_DryTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tile_interactive/InteractiveTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tile_interactive/InteractiveTile.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -411,11 +407,18 @@
       <option name="project" value="LOCAL" />
       <updated>1725963564094</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="breaking objects">
+      <option name="closed" value="true" />
+      <created>1726050043650</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1726050043650</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="draw npc" />
     <MESSAGE value="npc collision" />
     <MESSAGE value="dialogues" />
     <MESSAGE value="custom font" />
@@ -440,6 +443,7 @@
     <MESSAGE value="monster projectiles" />
     <MESSAGE value="mana" />
     <MESSAGE value="item drops" />
-    <option name="LAST_COMMIT_MESSAGE" value="item drops" />
+    <MESSAGE value="breaking objects" />
+    <option name="LAST_COMMIT_MESSAGE" value="breaking objects" />
   </component>
 </project>
