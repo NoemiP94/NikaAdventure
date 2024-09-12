@@ -4,12 +4,15 @@ import javax.swing.JFrame;
 
 
 public class Main {
+
+    public static JFrame window;
     public static void main(String[] args) {
         //create a window
-        JFrame window = new JFrame();
+        window = new JFrame();
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //lets the window properly close when user clicks the close button
         window.setResizable(false); //not resize the window
         window.setTitle("Nika's Adventures");
+        //window.setUndecorated(true);
 
         GamePanel gamePanel = new GamePanel();
         window.add(gamePanel);
