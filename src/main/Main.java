@@ -12,10 +12,14 @@ public class Main {
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //lets the window properly close when user clicks the close button
         window.setResizable(false); //not resize the window
         window.setTitle("Nika's Adventures");
-        //window.setUndecorated(true);
 
         GamePanel gamePanel = new GamePanel();
         window.add(gamePanel);
+
+        gamePanel.config.loadConfig();
+        if(gamePanel.fullScreenOn == true){
+            window.setUndecorated(true);
+        }
 
         window.pack(); //fit the preferred size and layouts of GamePanel
 
