@@ -40,6 +40,10 @@ public class KeyHandler implements KeyListener {//interface for receiving keyboa
         else if(gp.gameState == gp.characterState){
             characterState(code);
         }
+        //OPTION STATE
+        else if(gp.gameState == gp.optionState){
+            optionsState(code);
+        }
     }
 
     public void titleState(int code){
@@ -93,6 +97,9 @@ public class KeyHandler implements KeyListener {//interface for receiving keyboa
         }
         if(code == KeyEvent.VK_F) { //if the user press F
             shotKeyPressed = true;
+        }
+        if(code == KeyEvent.VK_ESCAPE) { //if the user press ESC
+            gp.gameState = gp.optionState;
         }
 
 
@@ -151,7 +158,61 @@ public class KeyHandler implements KeyListener {//interface for receiving keyboa
             gp.player.selectItem();
         }
     }
+    public void optionsState(int code){
+        if(code == KeyEvent.VK_ESCAPE){
+            gp.gameState = gp.playState;
+        }
+        if(code == KeyEvent.VK_ENTER){
+            enterPressed = true;
+        }
 
+        int maxCommandNum = 0;
+        switch(gp.ui.subState){
+            case 0: maxCommandNum = 5; break;
+            case 3: maxCommandNum = 1; break;
+        }
+        if( code == KeyEvent.VK_W){
+            gp.ui.commandNum--;
+            gp.playSE(9);
+            if(gp.ui.commandNum < 0){ // 0 is full screen
+                gp.ui.commandNum = maxCommandNum;
+            }
+        }
+        if( code == KeyEvent.VK_S){
+            gp.ui.commandNum++;
+            gp.playSE(9);
+            if(gp.ui.commandNum > maxCommandNum){
+                gp.ui.commandNum = 0;
+            }
+        }
+        if( code == KeyEvent.VK_A){
+           if(gp.ui.subState == 0){
+               if(gp.ui.commandNum == 1 && gp.music.volumeScale > 0){ // 1 is music
+                   gp.music.volumeScale--;
+                   gp.music.checkVolume();
+                   gp.playSE(9);
+               }
+               if(gp.ui.commandNum == 2 && gp.se.volumeScale > 0){ // 2 is sound effect
+                   gp.se.volumeScale--;
+                   gp.playSE(9);
+               }
+           }
+        }
+        if( code == KeyEvent.VK_D){
+            if(gp.ui.subState == 0){
+                if(gp.ui.commandNum == 1 && gp.music.volumeScale < 5){ // 1 is music
+                    gp.music.volumeScale++;
+                    gp.music.checkVolume();
+                    gp.playSE(9);
+                }
+                if(gp.ui.commandNum == 2 && gp.se.volumeScale < 5){ // 2 is sound effect
+                    gp.se.volumeScale++;
+                    gp.playSE(9);
+                }
+            }
+        }
+
+    }
     @Override
     public void keyReleased(KeyEvent e) { //when user release the button
         int code = e.getKeyCode();
