@@ -44,6 +44,10 @@ public class KeyHandler implements KeyListener {//interface for receiving keyboa
         else if(gp.gameState == gp.optionState){
             optionsState(code);
         }
+        //GAME OVER STATE
+        else if(gp.gameState == gp.gameState){
+            gameOverState(code);
+        }
     }
 
     public void titleState(int code){
@@ -209,6 +213,32 @@ public class KeyHandler implements KeyListener {//interface for receiving keyboa
                     gp.se.volumeScale++;
                     gp.playSE(9);
                 }
+            }
+        }
+
+    }
+    public void gameOverState(int code){
+        if(code == KeyEvent.VK_W){
+            gp.ui.commandNum--;
+            if(gp.ui.commandNum < 0){
+                gp.ui.commandNum = 1;
+            }
+            gp.playSE(9);
+        }
+        if(code == KeyEvent.VK_S){
+            gp.ui.commandNum++;
+            if(gp.ui.commandNum > 1){
+                gp.ui.commandNum = 0;
+            }
+            gp.playSE(9);
+        }
+        if(code == KeyEvent.VK_ENTER){
+            if(gp.ui.commandNum == 0){
+                gp.gameState = gp.playState;
+                gp.retry();
+            } else if (gp.ui.commandNum == 1){
+                gp.gameState = gp.titleState;
+                gp.restart();
             }
         }
 
