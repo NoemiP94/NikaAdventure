@@ -258,14 +258,14 @@ public class UI {
 
     public void drawDialogueScreen(){
         //WINDOW
-        int x = gp.tileSize*2;
+        int x = gp.tileSize*3;
         int y = gp.tileSize/2;
-        int width = gp.screenWidth - (gp.tileSize*4);
+        int width = gp.screenWidth - (gp.tileSize*6);
         int height = gp.tileSize*4;
         drawSubWindow(x,y,width,height);
 
         //TEXT
-        g2.setFont(g2.getFont().deriveFont(Font.PLAIN,28F));
+        g2.setFont(g2.getFont().deriveFont(Font.PLAIN,32F));
         x += gp.tileSize;
         y += gp.tileSize;
         for(String line : currentDialogue.split("\n")){
@@ -756,6 +756,35 @@ public class UI {
         gp.keyH.enterPressed = false;
     }
     public void trade_select(){
+        drawDialogueScreen();
+
+        //draw window
+        int x = gp.tileSize * 15;
+        int y = gp.tileSize * 4;
+        int width = gp.tileSize * 3;
+        int height = (int)(gp.tileSize * 3.5);
+        drawSubWindow(x,y,width,height);
+
+        //draw texts
+        x += gp.tileSize;
+        y += gp.tileSize;
+        g2.drawString("Buy", x, y);
+        if(commandNum == 0){
+            g2.drawString(">", x-24 ,y);
+        }
+        y += gp.tileSize;
+
+        g2.drawString("Sell", x, y);
+        if(commandNum == 1){
+            g2.drawString(">", x-24 ,y);
+        }
+        y += gp.tileSize;
+
+        g2.drawString("Leave", x, y);
+        if(commandNum == 2){
+            g2.drawString(">", x-24 ,y);
+        }
+
 
     }
     public void trade_buy(){}
