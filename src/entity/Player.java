@@ -433,7 +433,7 @@ public class Player extends Entity{
     }
 
     public void selectItem(){
-        int itemIndex = gp.ui.getItemIndexOnSlot();
+        int itemIndex = gp.ui.getItemIndexOnSlot(gp.ui.playerSlotCol,gp.ui.playerSlotRow);
         if(itemIndex < inventory.size()){
             Entity selectedItem = inventory.get(itemIndex);
             //if we are selected an item we check its type

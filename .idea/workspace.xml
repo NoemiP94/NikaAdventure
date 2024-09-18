@@ -4,11 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6688bab-d039-4b46-9b3f-6184f520bb9a" name="Changes" comment="handling trade state">
+    <list default="true" id="e6688bab-d039-4b46-9b3f-6184f520bb9a" name="Changes" comment="add cursor">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/EventHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/EventHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Entity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/KeyHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/KeyHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/UI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/object/OBJ_Axe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/OBJ_Axe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/object/OBJ_Key.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/OBJ_Key.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/object/OBJ_Potion_Red.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/OBJ_Potion_Red.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/object/OBJ_Shield_Blue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/OBJ_Shield_Blue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/object/OBJ_Shield_Wood.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/OBJ_Shield_Wood.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/object/OBJ_Sword_Normal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/OBJ_Sword_Normal.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,14 +89,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1722417396960</updated>
-    </task>
-    <task id="LOCAL-00001" summary="game loop and key input">
-      <option name="closed" value="true" />
-      <created>1722934150702</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1722934150702</updated>
     </task>
     <task id="LOCAL-00002" summary="add entity">
       <option name="closed" value="true" />
@@ -475,11 +474,18 @@
       <option name="project" value="LOCAL" />
       <updated>1726650150901</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="add cursor">
+      <option name="closed" value="true" />
+      <created>1726655291299</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1726655291300</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="improve render order" />
     <MESSAGE value="monster" />
     <MESSAGE value="hit detection" />
     <MESSAGE value="health bar &amp; death animation" />
@@ -504,6 +510,7 @@
     <MESSAGE value="transitions between maps" />
     <MESSAGE value="transitions between maps(transition state)" />
     <MESSAGE value="handling trade state" />
-    <option name="LAST_COMMIT_MESSAGE" value="handling trade state" />
+    <MESSAGE value="add cursor" />
+    <option name="LAST_COMMIT_MESSAGE" value="add cursor" />
   </component>
 </project>
