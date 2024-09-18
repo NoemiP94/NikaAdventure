@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6688bab-d039-4b46-9b3f-6184f520bb9a" name="Changes" comment="transitions between maps">
+    <list default="true" id="e6688bab-d039-4b46-9b3f-6184f520bb9a" name="Changes" comment="transitions between maps(transition state)">
+      <change afterPath="$PROJECT_DIR$/src/entity/NPC_Merchant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/EventHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/EventHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Entity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/AssetSetter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/AssetSetter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/GamePanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/UI.java" afterDir="false" />
     </list>
@@ -60,11 +63,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\m_emi\OneDrive\Desktop\NikaAdventure\res\npc" />
       <recent name="C:\Users\m_emi\OneDrive\Desktop\NikaAdventure\res\sound" />
       <recent name="C:\Users\m_emi\OneDrive\Desktop\NikaAdventure\res\maps" />
       <recent name="C:\Users\m_emi\OneDrive\Desktop\NikaAdventure\res\tiles" />
       <recent name="C:\Users\m_emi\OneDrive\Desktop\NikaAdventure\res\font" />
-      <recent name="C:\Users\m_emi\OneDrive\Desktop\NikaAdventure\res\tiles_interactive" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -459,11 +462,18 @@
       <option name="project" value="LOCAL" />
       <updated>1726647560625</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="transitions between maps(transition state)">
+      <option name="closed" value="true" />
+      <created>1726648835043</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1726648835043</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="create event (healing pool)" />
     <MESSAGE value="advanced event" />
     <MESSAGE value="improve render order" />
     <MESSAGE value="monster" />
@@ -488,6 +498,7 @@
     <MESSAGE value="saving config to a text file" />
     <MESSAGE value="game over" />
     <MESSAGE value="transitions between maps" />
-    <option name="LAST_COMMIT_MESSAGE" value="transitions between maps" />
+    <MESSAGE value="transitions between maps(transition state)" />
+    <option name="LAST_COMMIT_MESSAGE" value="transitions between maps(transition state)" />
   </component>
 </project>

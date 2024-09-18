@@ -28,6 +28,7 @@ public class UI {
     public int slotRow = 0;
     int subState = 0;
     int counter = 0;
+    public Entity npc;
 
     public UI(GamePanel gp){
         this.gp = gp;
@@ -112,6 +113,10 @@ public class UI {
         //TRANSITION STATE
         if(gp.gameState == gp.transitionState){
             drawTransition();
+        }
+        //TRADE STATE
+        if(gp.gameState == gp.tradeState){
+            drawTradeScreen();
         }
 
     }
@@ -742,6 +747,19 @@ public class UI {
             gp.eHandler.previousEventY = gp.player.worldY;
         }
     }
+    public void drawTradeScreen(){
+        switch(subState){
+            case 0: trade_select(); break;
+            case 1: trade_buy(); break;
+            case 2: trade_sell(); break;
+        }
+        gp.keyH.enterPressed = false;
+    }
+    public void trade_select(){
+
+    }
+    public void trade_buy(){}
+    public void trade_sell(){}
     public int getItemIndexOnSlot(){
         int itemIndex = slotCol + (slotRow*5); //return the item index of the inventory list... it finds the coordinates of the selected item
         return itemIndex;
