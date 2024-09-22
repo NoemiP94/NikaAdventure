@@ -55,7 +55,7 @@ public class Player extends Entity{
         speed = 4;
         direction = "down";
 
-        //PLAYER STATUS -> 1 life = 2 hearts
+        //PLAYER STATUS -> 1 heart = 2 lifes
         level = 1;
         maxLife = 6;
         life = maxLife;

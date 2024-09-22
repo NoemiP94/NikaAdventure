@@ -11,7 +11,7 @@ public class PathFinder {
     ArrayList<Node> openList = new ArrayList<>();
     public ArrayList<Node> pathList = new ArrayList<>();
     Node startNode, goalNode, currentNode;
-    boolean goalReached;
+    boolean goalReached = false;
     int step = 0;
 
     public PathFinder(GamePanel gp){
