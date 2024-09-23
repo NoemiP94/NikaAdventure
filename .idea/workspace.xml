@@ -4,10 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6688bab-d039-4b46-9b3f-6184f520bb9a" name="Changes" comment="npc pathfinding">
+    <list default="true" id="e6688bab-d039-4b46-9b3f-6184f520bb9a" name="Changes" comment="add aggro monsters">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/NPC_OldMan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/NPC_OldMan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Entity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/Projectile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Projectile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/GamePanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/monster/MON_GreenSlime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/monster/MON_GreenSlime.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/object/OBJ_Axe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/OBJ_Axe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/object/OBJ_Fireball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/OBJ_Fireball.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/object/OBJ_Sword_Normal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/OBJ_Sword_Normal.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,14 +87,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1722417396960</updated>
-    </task>
-    <task id="LOCAL-00006" summary="world and camera">
-      <option name="closed" value="true" />
-      <created>1723025244213</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1723025244213</updated>
     </task>
     <task id="LOCAL-00007" summary="collision detection">
       <option name="closed" value="true" />
@@ -474,11 +472,18 @@
       <option name="project" value="LOCAL" />
       <updated>1726999626940</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="add aggro monsters">
+      <option name="closed" value="true" />
+      <created>1727000571427</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1727000571427</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="scrolling message, leveling up, damage calculation" />
     <MESSAGE value="debug useful functions" />
     <MESSAGE value="inventory" />
     <MESSAGE value="picking up items" />
@@ -503,6 +508,7 @@
     <MESSAGE value="buy and sell items" />
     <MESSAGE value="creating pathfinding class" />
     <MESSAGE value="npc pathfinding" />
-    <option name="LAST_COMMIT_MESSAGE" value="npc pathfinding" />
+    <MESSAGE value="add aggro monsters" />
+    <option name="LAST_COMMIT_MESSAGE" value="add aggro monsters" />
   </component>
 </project>

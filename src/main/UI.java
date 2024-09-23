@@ -765,7 +765,7 @@ public class UI {
         g2.fillRect(0,0,gp.screenWidth,gp.screenHeight);
 
         if(counter == 50){
-            counter = 50;
+            counter = 0;
             gp.gameState = gp.playState;
             gp.currentMap = gp.eHandler.tempMap;
             //reset player's position

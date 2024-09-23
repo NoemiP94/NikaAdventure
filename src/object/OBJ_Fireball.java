@@ -16,6 +16,7 @@ public class OBJ_Fireball extends Projectile {
         maxLife = 80; //disappear every 80 frames
         life = maxLife;
         attack = 2;
+        knockBackPower = 0;
         useCost = 1; //spend 1 mana
         alive = false;
         getImage();
