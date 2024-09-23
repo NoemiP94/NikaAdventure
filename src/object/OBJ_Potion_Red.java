@@ -18,12 +18,12 @@ GamePanel gp;
 
     }
 
-    public void use(Entity entity){
+    public boolean use(Entity entity){
         gp.playSE(2);
         gp.gameState = gp.dialogueState;
         gp.ui.currentDialogue = "You drink the " + name + "!\n"
                 + "Your life has been recovered by " + value + ".";
         entity.life += value;
-
+        return true;
     }
 }

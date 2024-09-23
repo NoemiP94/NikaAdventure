@@ -334,23 +334,30 @@ public class Player extends Entity{
 
     public void pickUpObject(int i){
         if(i != 999){
-        //pickup only items
+            //pickup only items
             if(gp.obj[gp.currentMap][i].type == type_pickupOnly){
                 gp.obj[gp.currentMap][i].use(this);
                 gp.obj[gp.currentMap][i] = null;
             }
-        //inventory items
-        else {
-            String text;
-            if(inventory.size() != maxInventorySize){ //if inventory is not full
-                inventory.add(gp.obj[gp.currentMap][i]);
-                gp.playSE(1);
-                text = "Got a " + gp.obj[gp.currentMap][i].name + "!";
-            } else {
-                text = "You cannot carry any more!";
+            //obstacle
+            else if(gp.obj[gp.currentMap][i].type == type_obstacle){
+                if(keyH.enterPressed == true){
+                    attackCanceled = true;
+                    gp.obj[gp.currentMap][i].interact();
+                }
             }
-            gp.ui.addMessage(text);
-            gp.obj[gp.currentMap][i] = null;
+            //inventory items
+            else {
+                String text;
+                if(inventory.size() != maxInventorySize){ //if inventory is not full
+                    inventory.add(gp.obj[gp.currentMap][i]);
+                    gp.playSE(1);
+                    text = "Got a " + gp.obj[gp.currentMap][i].name + "!";
+                } else {
+                text = "You cannot carry any more!";
+                }
+                gp.ui.addMessage(text);
+                gp.obj[gp.currentMap][i] = null;
             }
         }
 
@@ -474,8 +481,9 @@ public class Player extends Entity{
                 defense = getDefense();
             }
             if(selectedItem.type == type_consumable){
-                selectedItem.use(this);
-                inventory.remove(itemIndex); //remove item after using
+                if(selectedItem.use(this) == true){
+                    inventory.remove(itemIndex); //remove item after using
+                }
             }
         }
     }
