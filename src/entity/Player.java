@@ -349,8 +349,7 @@ public class Player extends Entity{
             //inventory items
             else {
                 String text;
-                if(inventory.size() != maxInventorySize){ //if inventory is not full
-                    inventory.add(gp.obj[gp.currentMap][i]);
+                if(canObtainItem(gp.obj[gp.currentMap][i]) == true){ //if inventory is not full
                     gp.playSE(1);
                     text = "Got a " + gp.obj[gp.currentMap][i].name + "!";
                 } else {
@@ -482,11 +481,54 @@ public class Player extends Entity{
             }
             if(selectedItem.type == type_consumable){
                 if(selectedItem.use(this) == true){
-                    inventory.remove(itemIndex); //remove item after using
+                    if(selectedItem.amount > 1){
+                        selectedItem.amount--; //reduce the amount
+                    }
+                    else{
+                        inventory.remove(itemIndex); //remove item after using
+                    }
+
                 }
             }
         }
     }
+    public int searchItemInInventory(String itemName){
+        //search if the item is on the inventory
+        int itemIndex = 999;
+        for(int i = 0; i < inventory.size(); i++){
+            if(inventory.get(i).name.equals(itemName)){
+                itemIndex = i;
+                break;
+            }
+        }
+        return itemIndex;
+    }
+    public boolean canObtainItem(Entity item){
+        //check if we can obtain this item
+        boolean canObtain = false;
+        //check if item is stackable
+        if(item.stackable == true){
+            int index = searchItemInInventory(item.name);
+            if(index != 999){ //if we already have the same item
+                inventory.get(index).amount++; //ad its amount, but not a new slot
+                canObtain = true;
+            }
+            else { //it's not in inventory -> check vacancy
+                if(inventory.size() != maxInventorySize){
+                    inventory.add(item); //add in a new slot
+                    canObtain = true;
+                }
+            }
+        }
+        else { //if it's not stackable -> check vacancy
+            if(inventory.size() != maxInventorySize){
+                inventory.add(item); //add in a new slot
+                canObtain = true;
+            }
+        }
+        return canObtain;
+    }
+
     public void draw(Graphics2D g2){
        // g2.setColor(Color.white);
        // g2.fillRect(x, y, gp.tileSize, gp.tileSize); //fillRect( x, y, width, height ) -> draw a rectangle

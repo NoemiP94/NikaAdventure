@@ -69,7 +69,6 @@ public class UI {
         message.add(text);
         messageCounter.add(0);
     }
-
     public void draw(Graphics2D g2){
         this.g2 = g2;
 
@@ -124,7 +123,6 @@ public class UI {
         }
 
     }
-
     public void drawPlayerLife(){
 
         int x = gp.tileSize/2;
@@ -174,7 +172,6 @@ public class UI {
             x += 35;
         }
     }
-
     public void drawMessage(){
         int messageX = gp.tileSize;
         int messageY = gp.tileSize*4;
@@ -198,7 +195,6 @@ public class UI {
             }
         }
     }
-
     public void drawTitleScreen(){
 
         g2.setColor(new Color(0,0,0));
@@ -249,7 +245,6 @@ public class UI {
             g2.drawString(">",x-gp.tileSize,y);
         }
     }
-
     public void drawPauseScreen(){
         g2.setFont(g2.getFont().deriveFont(Font.PLAIN, 80F));
         String text = "PAUSED";
@@ -259,7 +254,6 @@ public class UI {
 
         g2.drawString(text,x,y);
     }
-
     public void drawDialogueScreen(){
         //WINDOW
         int x = gp.tileSize*3;
@@ -277,7 +271,6 @@ public class UI {
             y += 40;
         }
     }
-
     public void drawCharacterScreen(){
         //create a frame
         final int frameX = gp.tileSize*2;
@@ -393,7 +386,6 @@ public class UI {
 //        textX = getXForAlignToRightText(value, tailX);
 //        g2.drawString(value, textX, textY);
     }
-
     public void drawInventory(Entity entity, boolean cursor){ //entity -> inventory entity, cursor -> if we need cursor
         int frameX;
         int frameY;
@@ -438,6 +430,25 @@ public class UI {
                 g2.fillRoundRect(slotX, slotY, gp.tileSize,gp.tileSize, 10 ,10);
             }
             g2.drawImage(entity.inventory.get(i).down1, slotX,slotY,null);
+
+            //display amount
+            if(entity == gp.player && entity.inventory.get(i).amount > 1){
+                g2.setFont(g2.getFont().deriveFont(32F));
+                int amountX;
+                int amountY;
+
+                String s = "" + entity.inventory.get(i).amount;
+                amountX = getXForAlignToRightText(s, slotX+44);
+                amountY = slotY + gp.tileSize;
+
+                //shadow
+                g2.setColor(new Color(60,60,60));
+                g2.drawString(s,amountX,amountY);
+                //number
+                g2.setColor(Color.white);
+                g2.drawString(s, amountX-3, amountY-3);
+            }
+
             slotX += slotSize; //go to next slot
             if(i == 4 || i == 9 || i == 14){ // if i is 4 go to next col
                 slotX = slotXStart;
@@ -646,8 +657,6 @@ public class UI {
 
         gp.config.saveConfig(); //save in config.txt
     }
-
-
     public void options_fullScreenNotification(int frameX, int frameY){
         int textX = frameX +gp.tileSize;
         int textY = frameY + gp.tileSize*3;
@@ -873,20 +882,18 @@ public class UI {
                     currentDialogue = "You need more coin to buy that!";
                     drawDialogueScreen();
                 }
-                //check if player has empty slot in his inventory
-                else if(gp.player.inventory.size() == gp.player.maxInventorySize){
-                    subState = 0;
-                    gp.gameState = gp.dialogueState;
-                    currentDialogue = "You cannot carry any more!";
-                    drawDialogueScreen();
-                } else {
-                  gp.player.coin -= npc.inventory.get(itemIndex).price; //subtract price
-                  gp.player.inventory.add(npc.inventory.get(itemIndex)); //add to player inventory
-
+                else{
+                    if(gp.player.canObtainItem(npc.inventory.get(itemIndex)) == true){
+                        gp.player.coin -= npc.inventory.get(itemIndex).price; //subtract price -> reduce coin
+                    }
+                    else {
+                        subState = 0;
+                        gp.gameState = gp.dialogueState;
+                        currentDialogue = "You cannot carry any more!";
+                    }
                 }
             }
         }
-
     }
     public void trade_sell(){
         //draw player inventory
@@ -938,7 +945,12 @@ public class UI {
                     currentDialogue = " You cannot sell an equipped item!";
 
                 } else {
-                    gp.player.inventory.remove(itemIndex);
+                    if(gp.player.inventory.get(itemIndex).amount > 1){
+                        gp.player.inventory.get(itemIndex).amount--; //reduce amount
+                    }
+                    else {
+                        gp.player.inventory.remove(itemIndex);
+                    }
                     gp.player.coin += price;
                 }
             }

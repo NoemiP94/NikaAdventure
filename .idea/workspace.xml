@@ -4,21 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6688bab-d039-4b46-9b3f-6184f520bb9a" name="Changes" comment="add knockback">
-      <change afterPath="$PROJECT_DIR$/res/objects/chest_opened.png" afterDir="false" />
+    <list default="true" id="e6688bab-d039-4b46-9b3f-6184f520bb9a" name="Changes" comment="object detection/loot">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/maps/worldV3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/res/maps/worldV3.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/objects/chest.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/objects/chest.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/entity/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Entity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/entity/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/AssetSetter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/AssetSetter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/monster/MON_GreenSlime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/monster/MON_GreenSlime.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/UI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/object/OBJ_Chest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/OBJ_Chest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/object/OBJ_Coin_Bronze.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/OBJ_Coin_Bronze.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/object/OBJ_Door.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/OBJ_Door.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/object/OBJ_Heart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/OBJ_Heart.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/object/OBJ_Key.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/OBJ_Key.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/object/OBJ_Mana_Crystal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/OBJ_Mana_Crystal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/object/OBJ_Potion_Red.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/OBJ_Potion_Red.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -93,14 +86,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1722417396960</updated>
-    </task>
-    <task id="LOCAL-00008" summary="object placement">
-      <option name="closed" value="true" />
-      <created>1723112181041</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1723112181041</updated>
     </task>
     <task id="LOCAL-00009" summary="object interaction">
       <option name="closed" value="true" />
@@ -486,11 +471,18 @@
       <option name="project" value="LOCAL" />
       <updated>1727085558411</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="object detection/loot">
+      <option name="closed" value="true" />
+      <created>1727089102649</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1727089102650</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="inventory" />
     <MESSAGE value="picking up items" />
     <MESSAGE value="switching equipment" />
     <MESSAGE value="implement axe animation" />
@@ -515,6 +507,7 @@
     <MESSAGE value="npc pathfinding" />
     <MESSAGE value="add aggro monsters" />
     <MESSAGE value="add knockback" />
-    <option name="LAST_COMMIT_MESSAGE" value="add knockback" />
+    <MESSAGE value="object detection/loot" />
+    <option name="LAST_COMMIT_MESSAGE" value="object detection/loot" />
   </component>
 </project>
