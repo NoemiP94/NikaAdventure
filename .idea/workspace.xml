@@ -4,11 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6688bab-d039-4b46-9b3f-6184f520bb9a" name="Changes" comment="stackable items">
-      <change afterPath="$PROJECT_DIR$/src/environment/EnvironmentManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/environment/Lighting.java" afterDir="false" />
+    <list default="true" id="e6688bab-d039-4b46-9b3f-6184f520bb9a" name="Changes" comment="lighting effect">
+      <change afterPath="$PROJECT_DIR$/res/objects/lantern.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/object/OBJ_Lantern.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Entity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/environment/EnvironmentManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/environment/EnvironmentManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/environment/Lighting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/environment/Lighting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/AssetSetter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/AssetSetter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/GamePanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/UI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tile/TileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tile/TileManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,14 +89,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1722417396960</updated>
-    </task>
-    <task id="LOCAL-00010" summary="sound">
-      <option name="closed" value="true" />
-      <created>1723194798578</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1723194798578</updated>
     </task>
     <task id="LOCAL-00011" summary="add message">
       <option name="closed" value="true" />
@@ -475,11 +474,18 @@
       <option name="project" value="LOCAL" />
       <updated>1727107522921</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="lighting effect">
+      <option name="closed" value="true" />
+      <created>1727168133682</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1727168133686</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="switching equipment" />
     <MESSAGE value="implement axe animation" />
     <MESSAGE value="using items" />
     <MESSAGE value="projectiles" />
@@ -504,6 +510,7 @@
     <MESSAGE value="add knockback" />
     <MESSAGE value="object detection/loot" />
     <MESSAGE value="stackable items" />
-    <option name="LAST_COMMIT_MESSAGE" value="stackable items" />
+    <MESSAGE value="lighting effect" />
+    <option name="LAST_COMMIT_MESSAGE" value="lighting effect" />
   </component>
 </project>

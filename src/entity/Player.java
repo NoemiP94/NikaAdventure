@@ -15,6 +15,7 @@ public class Player extends Entity{
     public final int screenX;
     public final int screenY;
     public boolean attackCanceled = false;
+    public boolean lightUpdated = false;
 
     //public int hasKey = 0; //how many keys the player currently has
 
@@ -478,6 +479,15 @@ public class Player extends Entity{
             if(selectedItem.type == type_shield){
                 currentShield = selectedItem;
                 defense = getDefense();
+            }
+            if(selectedItem.type == type_light){
+                if(currentLight == selectedItem){
+                    currentLight = null; // if its already selected -> unequipped
+                }
+                else {
+                    currentLight = selectedItem;
+                }
+                lightUpdated = true;
             }
             if(selectedItem.type == type_consumable){
                 if(selectedItem.use(this) == true){
