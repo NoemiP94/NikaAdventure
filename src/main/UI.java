@@ -121,6 +121,10 @@ public class UI {
         if(gp.gameState == gp.tradeState){
             drawTradeScreen();
         }
+        //SLEEP STATE
+        if(gp.gameState == gp.sleepState){
+            drawSleepScreen();
+        }
 
     }
     public void drawPlayerLife(){
@@ -959,6 +963,26 @@ public class UI {
         }
 
 
+    }
+    public void drawSleepScreen(){
+        counter++;
+        if(counter < 120){//the screen gets darker for the next 2 seconds
+            gp.eManager.lighting.filterAlpha += 0.01f;
+            if(gp.eManager.lighting.filterAlpha > 1f){
+                gp.eManager.lighting.filterAlpha = 1f;
+            }
+        }
+        if(counter >= 120){//the screen gets lighter for the next 2 seconds
+            gp.eManager.lighting.filterAlpha -= 0.01f;
+            if(gp.eManager.lighting.filterAlpha <= 0f){
+                gp.eManager.lighting.filterAlpha = 0f;
+                counter = 0;
+                gp.eManager.lighting.dayState = gp.eManager.lighting.day;
+                gp.eManager.lighting.dayCounter = 0;
+                gp.gameState = gp.playState;
+                gp.player.getPlayerImage();
+            }
+        }
     }
     public int getItemIndexOnSlot(int slotCol, int slotRow){
         int itemIndex = slotCol + (slotRow*5); //return the item index of the inventory list... it finds the coordinates of the selected item
