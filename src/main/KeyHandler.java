@@ -52,6 +52,10 @@ public class KeyHandler implements KeyListener {//interface for receiving keyboa
         else if(gp.gameState == gp.tradeState){
             tradeState(code);
         }
+        //MAP STATE
+        else if(gp.gameState == gp.mapState){
+            mapState(code);
+        }
     }
 
     public void titleState(int code){
@@ -109,6 +113,17 @@ public class KeyHandler implements KeyListener {//interface for receiving keyboa
         if(code == KeyEvent.VK_ESCAPE) { //if the user press ESC
             gp.gameState = gp.optionState;
         }
+        if(code == KeyEvent.VK_M) { //if the user press M
+            gp.gameState = gp.mapState;
+        }
+        if(code == KeyEvent.VK_X) { //if the user press X
+            if(gp.map.miniMapOn == false){
+                gp.map.miniMapOn = true;
+            }
+            else {
+                gp.map.miniMapOn = false;
+            }
+        }
 
 
 
@@ -122,8 +137,8 @@ public class KeyHandler implements KeyListener {//interface for receiving keyboa
         }
         if(code == KeyEvent.VK_R){ //refresh map changes
             switch(gp.currentMap){
-                case 0:gp.tileM.loadMap("/maps/worldV3.txt",0); break;
-                case 1:gp.tileM.loadMap("/maps/interior01.txt",1); break;
+                case 0:gp.tileM.loadMap("/maps/worldmap.txt",0); break;
+                case 1:gp.tileM.loadMap("/maps/indoor01.txt",1); break;
             }
 
         }
@@ -260,6 +275,11 @@ public class KeyHandler implements KeyListener {//interface for receiving keyboa
             if(code == KeyEvent.VK_ESCAPE){
                 gp.ui.subState = 0;
             }
+        }
+    }
+    public void mapState(int code){
+        if(code == KeyEvent.VK_M){
+            gp.gameState = gp.playState;
         }
     }
     public void playerInventory(int code){

@@ -4,45 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6688bab-d039-4b46-9b3f-6184f520bb9a" name="Changes" comment="day and night cycle">
+    <list default="true" id="e6688bab-d039-4b46-9b3f-6184f520bb9a" name="Changes" comment="update map and tiles">
+      <change afterPath="$PROJECT_DIR$/src/tile/Map.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/tiles/earth.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/tiles/floor01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/tiles/grass00.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/tiles/grass01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/tiles/hut.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/tiles/road00.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/tiles/road01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/tiles/road02.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/tiles/road03.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/tiles/road04.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/tiles/road05.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/tiles/road06.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/tiles/road07.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/tiles/road08.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/tiles/road09.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/tiles/road10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/tiles/road11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/tiles/road12.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/tiles/table01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/tiles/tree.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/tiles/wall.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/tiles/water00.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/tiles/water01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/tiles/water02.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/tiles/water03.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/tiles/water04.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/tiles/water05.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/tiles/water06.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/tiles/water07.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/tiles/water08.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/tiles/water09.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/tiles/water10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/tiles/water11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/tiles/water12.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/tiles/water13.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/GamePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tile/TileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tile/TileManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/KeyHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/KeyHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/UI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,22 +49,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "settings.editor.selected.configurable": "preferences.rainbow.brackets.disable.when"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\m_emi\OneDrive\Desktop\NikaAdventure\res\maps" />
       <recent name="C:\Users\m_emi\OneDrive\Desktop\NikaAdventure\res\sound" />
       <recent name="C:\Users\m_emi\OneDrive\Desktop\NikaAdventure\res\objects" />
       <recent name="C:\Users\m_emi\OneDrive\Desktop\NikaAdventure\res\npc" />
-      <recent name="C:\Users\m_emi\OneDrive\Desktop\NikaAdventure\res\maps" />
       <recent name="C:\Users\m_emi\OneDrive\Desktop\NikaAdventure\res\tiles" />
     </key>
   </component>
@@ -116,14 +84,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1722417396960</updated>
-    </task>
-    <task id="LOCAL-00013" summary="improving rendering performance">
-      <option name="closed" value="true" />
-      <created>1724400932557</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1724400932557</updated>
     </task>
     <task id="LOCAL-00014" summary="add new tileset">
       <option name="closed" value="true" />
@@ -509,11 +469,18 @@
       <option name="project" value="LOCAL" />
       <updated>1727173615068</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="update map and tiles">
+      <option name="closed" value="true" />
+      <created>1727252961796</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1727252961797</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="projectiles" />
     <MESSAGE value="monster projectiles" />
     <MESSAGE value="mana" />
     <MESSAGE value="item drops" />
@@ -538,6 +505,7 @@
     <MESSAGE value="lighting effect" />
     <MESSAGE value="lighting item" />
     <MESSAGE value="day and night cycle" />
-    <option name="LAST_COMMIT_MESSAGE" value="day and night cycle" />
+    <MESSAGE value="update map and tiles" />
+    <option name="LAST_COMMIT_MESSAGE" value="update map and tiles" />
   </component>
 </project>
