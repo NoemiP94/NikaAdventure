@@ -180,7 +180,13 @@ public class CollisionChecker {
         gp.player.solidArea.x = gp.player.worldX + gp.player.solidArea.x;
         gp.player.solidArea.y = gp.player.worldY + gp.player.solidArea.y;
 
-        switch(entity.direction){
+        //use a temporal direction when it's being knock backed
+        String direction = entity.direction;
+        if(entity.knockBack == true){
+            direction = entity.knockBackDirection;
+        }
+
+        switch(direction){
             case "up":
                 entity.solidArea.y -= entity.speed;
                 break;
