@@ -4,12 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6688bab-d039-4b46-9b3f-6184f520bb9a" name="Changes" comment="update map and tiles">
-      <change afterPath="$PROJECT_DIR$/src/tile/Map.java" afterDir="false" />
+    <list default="true" id="e6688bab-d039-4b46-9b3f-6184f520bb9a" name="Changes" comment="map screen and minimap">
+      <change afterPath="$PROJECT_DIR$/res/monster/orc_attack_down_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/monster/orc_attack_down_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/monster/orc_attack_left_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/monster/orc_attack_left_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/monster/orc_attack_right_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/monster/orc_attack_right_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/monster/orc_attack_up_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/monster/orc_attack_up_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/monster/orc_down_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/monster/orc_down_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/monster/orc_left_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/monster/orc_left_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/monster/orc_right_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/monster/orc_right_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/monster/orc_up_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/monster/orc_up_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/monster/MON_Orc.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/GamePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/KeyHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/KeyHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/UI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Entity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/Projectile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Projectile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/AssetSetter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/AssetSetter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/CollisionChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/CollisionChecker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/monster/MON_GreenSlime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/monster/MON_GreenSlime.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tile/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tile/Map.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,24 +69,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "settings.editor.selected.configurable": "preferences.rainbow.brackets.disable.when"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.rainbow.brackets.disable.when&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\m_emi\OneDrive\Desktop\NikaAdventure\res\monster" />
       <recent name="C:\Users\m_emi\OneDrive\Desktop\NikaAdventure\res\maps" />
       <recent name="C:\Users\m_emi\OneDrive\Desktop\NikaAdventure\res\sound" />
       <recent name="C:\Users\m_emi\OneDrive\Desktop\NikaAdventure\res\objects" />
       <recent name="C:\Users\m_emi\OneDrive\Desktop\NikaAdventure\res\npc" />
-      <recent name="C:\Users\m_emi\OneDrive\Desktop\NikaAdventure\res\tiles" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -84,14 +104,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1722417396960</updated>
-    </task>
-    <task id="LOCAL-00014" summary="add new tileset">
-      <option name="closed" value="true" />
-      <created>1724407831726</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1724407831726</updated>
     </task>
     <task id="LOCAL-00015" summary="game state">
       <option name="closed" value="true" />
@@ -477,11 +489,18 @@
       <option name="project" value="LOCAL" />
       <updated>1727252961797</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="map screen and minimap">
+      <option name="closed" value="true" />
+      <created>1727255297712</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1727255297712</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="monster projectiles" />
     <MESSAGE value="mana" />
     <MESSAGE value="item drops" />
     <MESSAGE value="breaking objects" />
@@ -506,6 +525,7 @@
     <MESSAGE value="lighting item" />
     <MESSAGE value="day and night cycle" />
     <MESSAGE value="update map and tiles" />
-    <option name="LAST_COMMIT_MESSAGE" value="update map and tiles" />
+    <MESSAGE value="map screen and minimap" />
+    <option name="LAST_COMMIT_MESSAGE" value="map screen and minimap" />
   </component>
 </project>
