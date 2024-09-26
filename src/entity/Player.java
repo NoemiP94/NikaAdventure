@@ -95,6 +95,8 @@ public class Player extends Entity{
     }
     public int getAttack(){
         attackArea = currentWeapon.attackArea;
+        motion1_duration = currentWeapon.motion1_duration;
+        motion2_duration = currentWeapon.motion2_duration;
         return attack = strength * currentWeapon.attackValue;
     }
     public int getDefense(){
@@ -146,7 +148,6 @@ public class Player extends Entity{
         }
 
     }
-
 
     public void update(){
 
@@ -276,69 +277,6 @@ public class Player extends Entity{
             gp.gameState = gp.gameOverState;
             gp.ui.commandNum = -1;
             gp.playSE(12);
-        }
-
-    }
-
-    public void attacking(){
-        //attack animation
-        spriteCounter++;
-
-        if(spriteCounter <= 5){
-            spriteNum = 1; //0-5 frame ca.
-        }
-        if(spriteCounter > 5 && spriteCounter <= 25){
-            spriteNum = 2; //6-25 frame ca.
-
-            //check where weapon collision is, not to player collision is
-            //save the current worldX, worldY, solidArea
-            int currentWorldX = worldX;
-            int currentWorldY = worldY;
-            int solidAreaWidth = solidArea.width;
-            int solidAreaHeight = solidArea.height;
-
-            //Adjust player's worldX and worldY for the AttackArea
-            switch(direction){
-                case "up":
-                    worldY -= attackArea.height;
-                    break;
-                case "down":
-                    worldY += attackArea.height;
-                    break;
-                case "left":
-                    worldX -= attackArea.width;
-                    break;
-                case "right":
-                    worldX += attackArea.width;
-                    break;
-            }
-            //attack area becomes solidArea
-            solidArea.width = attackArea.width;
-            solidArea.height = attackArea.height;
-            //check monster collision with the updated worldX, worldY and solidArea
-            int monsterIndex = gp.cChecker.checkEntity(this, gp.monster);
-            damageMonster(monsterIndex,this, attack, currentWeapon.knockBackPower); //sword or axe attack
-
-            //check interactive tile collision
-            int iTileIndex = gp.cChecker.checkEntity(this, gp.iTile);
-            damageInteractiveTile(iTileIndex);
-
-            //check projectile collision
-            int projectileIndex = gp.cChecker.checkEntity(this, gp.projectile);
-            damageProjectile(projectileIndex);
-
-            //restore original data
-            worldX = currentWorldX;
-            worldY = currentWorldY;
-            //after checking collision, restore the original data
-            solidArea.width = solidAreaWidth;
-            solidArea.height = solidAreaHeight;
-
-        }
-        if(spriteCounter > 25 ){
-            spriteNum = 1;
-            spriteCounter = 0;
-            attacking = false; //reset -> finish attack animation
         }
 
     }
@@ -556,81 +494,44 @@ public class Player extends Entity{
         switch(direction){
             case "up":
                 if(attacking == false){
-                    if(spriteNum == 1){
-                        image = up1;
-                    }
-                    if(spriteNum == 2){
-                        image = up2;
-                    }
+                    if(spriteNum == 1){image = up1;}
+                    if(spriteNum == 2){image = up2;}
                 }
                 if(attacking == true){
                     tempScreenY = screenY - gp.tileSize;
-                    if(spriteNum == 1){
-                        image = attackUp1;
-                    }
-                    if(spriteNum == 2){
-                        image = attackUp2;
-                    }
-                }
+                    if(spriteNum == 1){image = attackUp1;}
+                    if(spriteNum == 2){image = attackUp2;}}
                 break;
             case "down":
                 if(attacking == false){
-                    if(spriteNum == 1){
-                        image = down1;
-                    }
-                    if(spriteNum == 2) {
-                        image = down2;
-                    }
+                    if(spriteNum == 1){image = down1;}
+                    if(spriteNum == 2) {image = down2;}
                 }
                 if(attacking == true){
-                    if(spriteNum == 1){
-                        image = attackDown1;
-                    }
-                    if(spriteNum == 2) {
-                        image = attackDown2;
-                    }
-                }
-
+                    if(spriteNum == 1){image = attackDown1;}
+                    if(spriteNum == 2) {image = attackDown2;}}
                 break;
             case "left":
                 if(attacking == false){
-                    if(spriteNum == 1){
-                        image = left1;
-                    }
-                    if(spriteNum == 2){
-                        image = left2;
-                    }
+                    if(spriteNum == 1){image = left1;}
+                    if(spriteNum == 2){image = left2;}
                 }
 
                 if(attacking == true){
                     tempScreenX = screenX - gp.tileSize;
-                    if(spriteNum == 1){
-                        image = attackLeft1;
-                    }
-                    if(spriteNum == 2){
-                        image = attackLeft2;
-                    }
+                    if(spriteNum == 1){image = attackLeft1;}
+                    if(spriteNum == 2){image = attackLeft2;}
                 }
-
                 break;
             case "right":
                 if(attacking == false){
-                    if(spriteNum == 1){
-                        image = right1;
-                    }
-                    if(spriteNum == 2){
-                        image = right2;
-                    }
+                    if(spriteNum == 1){image = right1;}
+                    if(spriteNum == 2){image = right2;}
                 }
                 if(attacking == true){
-                    if(spriteNum == 1){
-                        image = attackRight1;
-                    }
-                    if(spriteNum == 2){
-                        image = attackRight2;
-                    }
+                    if(spriteNum == 1){image = attackRight1;}
+                    if(spriteNum == 2){image = attackRight2;}
                 }
-
                 break;
         }
 

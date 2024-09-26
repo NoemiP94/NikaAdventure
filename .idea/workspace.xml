@@ -4,32 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6688bab-d039-4b46-9b3f-6184f520bb9a" name="Changes" comment="map screen and minimap">
-      <change afterPath="$PROJECT_DIR$/res/monster/orc_attack_down_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/monster/orc_attack_down_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/monster/orc_attack_left_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/monster/orc_attack_left_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/monster/orc_attack_right_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/monster/orc_attack_right_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/monster/orc_attack_up_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/monster/orc_attack_up_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/monster/orc_down_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/monster/orc_down_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/monster/orc_left_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/monster/orc_left_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/monster/orc_right_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/monster/orc_right_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/monster/orc_up_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/monster/orc_up_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/monster/MON_Orc.java" afterDir="false" />
+    <list default="true" id="e6688bab-d039-4b46-9b3f-6184f520bb9a" name="Changes" comment="creating orc class and fix knockback direction">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/entity/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Entity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/entity/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/Projectile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Projectile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/AssetSetter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/AssetSetter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/CollisionChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/CollisionChecker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/monster/MON_GreenSlime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/monster/MON_GreenSlime.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tile/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tile/Map.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/monster/MON_Orc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/monster/MON_Orc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/object/OBJ_Axe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/OBJ_Axe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/object/OBJ_Sword_Normal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/OBJ_Sword_Normal.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,14 +85,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1722417396960</updated>
-    </task>
-    <task id="LOCAL-00015" summary="game state">
-      <option name="closed" value="true" />
-      <created>1724657658273</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1724657658273</updated>
     </task>
     <task id="LOCAL-00016" summary="draw npc">
       <option name="closed" value="true" />
@@ -497,11 +470,18 @@
       <option name="project" value="LOCAL" />
       <updated>1727255297712</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="creating orc class and fix knockback direction">
+      <option name="closed" value="true" />
+      <created>1727341003168</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1727341003169</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="mana" />
     <MESSAGE value="item drops" />
     <MESSAGE value="breaking objects" />
     <MESSAGE value="particles" />
@@ -526,6 +506,7 @@
     <MESSAGE value="day and night cycle" />
     <MESSAGE value="update map and tiles" />
     <MESSAGE value="map screen and minimap" />
-    <option name="LAST_COMMIT_MESSAGE" value="map screen and minimap" />
+    <MESSAGE value="creating orc class and fix knockback direction" />
+    <option name="LAST_COMMIT_MESSAGE" value="creating orc class and fix knockback direction" />
   </component>
 </project>
