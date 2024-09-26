@@ -13,7 +13,9 @@ import java.util.Random;
 public class Entity { //abstract class
     GamePanel gp;
     public BufferedImage up1, up2, down1, down2, left1, left2, right1, right2;
-    public BufferedImage attackUp1, attackUp2, attackDown1, attackDown2, attackLeft1, attackLeft2, attackRight1, attackRight2;
+    public BufferedImage attackUp1, attackUp2, attackDown1, attackDown2, attackLeft1, attackLeft2, attackRight1, attackRight2,
+    guardUp, guardDown, guardLeft, guardRight;
+
     public BufferedImage image, image2, image3;
     public Rectangle solidArea = new Rectangle(0,0,48,48);
     public Rectangle attackArea = new Rectangle(0,0 ,0,0); //entity attack area
@@ -38,6 +40,9 @@ public class Entity { //abstract class
     public boolean onPath = false;
     public boolean knockBack = false;
     public String knockBackDirection;
+    public boolean guarding = false;
+    public boolean transparent = false;
+    public boolean offBalance = false;
 
     //COUNTER
     public int spriteCounter = 0;
@@ -47,6 +52,8 @@ public class Entity { //abstract class
     int dyingCounter = 0;
     int hpBarCounter = 0;
     int knockBackCounter = 0;
+    public int guardCounter = 0;
+    int offBalanceCounter = 0;
 
     //CHARACTER ATTRIBUTES
 
@@ -131,12 +138,10 @@ public class Entity { //abstract class
         int yDistance = Math.abs(worldY - target.worldY);
         return yDistance;
     }
-
     public int getTileDistance(Entity target){
         int tileDistance = (getXDistance(target) + getYDistance(target))/gp.tileSize;
         return tileDistance;
     }
-
     public int getGoalCol(Entity target){
         int goalCol = (target.worldX + target.solidArea.x)/gp.tileSize;
         return goalCol;
@@ -188,17 +193,14 @@ public class Entity { //abstract class
         Color color = null;
         return color;
     }
-
     public int getParticleSize(){
         int size = 0;
         return size;
     }
-
     public int getParticleSpeed(){
         int speed = 0;
         return speed;
     }
-
     public int getParticleMaxLife(){
         int maxLife = 0;
         return  maxLife;
@@ -302,8 +304,6 @@ public class Entity { //abstract class
                 }
             }
         }
-
-
         if(invincible == true){
             invincibleCounter++;
             if(invincibleCounter > 40){
@@ -313,6 +313,13 @@ public class Entity { //abstract class
         }
         if(shotAvailableCounter < 30){
             shotAvailableCounter++;
+        }
+        if(offBalance == true){
+            offBalanceCounter++;
+            if(offBalanceCounter > 60){
+                offBalance = false;
+                offBalanceCounter = 0;
+            }
         }
     }
     public void checkAttackOrNot(int rate, int straight, int horizontal){
@@ -353,7 +360,6 @@ public class Entity { //abstract class
             }
         }
     }
-
     public void checkShootOrNot(int rate, int shootInterval){
         int i = new Random().nextInt(rate);
         if(i == 0 && projectile.alive == false && shotAvailableCounter == shootInterval){
@@ -406,6 +412,16 @@ public class Entity { //abstract class
 
             actionLockCounter = 0;
         }
+    }
+    public String getOppositeDirection(String direction){
+        String oppositeDirection = "";
+        switch(direction){
+            case "up": oppositeDirection = "down"; break;
+            case "down": oppositeDirection = "up";break;
+            case "left": oppositeDirection = "right";break;
+            case "right": oppositeDirection = "left";break;
+        }
+        return oppositeDirection;
     }
     public void attacking(){
         //attack animation
@@ -482,12 +498,41 @@ public class Entity { //abstract class
 
     public void damagePlayer(int attack){
         if(gp.player.invincible == false){
+
             //we can give damage
-            gp.playSE(6);
             int damage = attack - gp.player.defense;
-            if(damage <= 0){
-                damage = 0;
+
+
+            //get an opposite direction of this attacker
+            String canGuardDirection = getOppositeDirection(direction);
+
+            if(gp.player.guarding == true && gp.player.direction.equals(canGuardDirection)){ //player can guard this attack
+                //parry
+                if(gp.player.guardCounter < 10){
+                    damage = 0;
+                    gp.playSE(16);
+                    setKnockBack(this, gp.player, knockBackPower);
+                    offBalance = true;
+                    spriteCounter =- 60; //stun effect
+                }
+                else {
+                    //normal guard
+                    damage /=3;
+                    gp.playSE(15);
+                }
             }
+            else{
+                //not guarding
+                gp.playSE(6);
+                if(damage < 1){
+                    damage = 1;
+                }
+            }
+            if(damage != 0){
+                gp.player.transparent = true;
+                setKnockBack(gp.player, this, knockBackPower); //only happens when receive damage
+            }
+
             gp.player.life -= damage;
             gp.player.invincible = true;
         }
