@@ -237,12 +237,14 @@ public class KeyHandler implements KeyListener {//interface for receiving keyboa
             gp.playSE(9);
         }
         if(code == KeyEvent.VK_ENTER){
-            if(gp.ui.commandNum == 0){
+            if(gp.ui.commandNum == 0){ //retry
                 gp.gameState = gp.playState;
-                gp.retry();
-            } else if (gp.ui.commandNum == 1){
+                gp.resetGame(false);
+                gp.playSE(0);
+            } else if (gp.ui.commandNum == 1){ //quit
                 gp.gameState = gp.titleState;
-                gp.restart();
+                gp.resetGame(true);
+
             }
         }
 

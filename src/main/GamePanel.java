@@ -113,22 +113,19 @@ public class GamePanel extends JPanel implements Runnable{
 
 
     }
-    public void retry(){
+    public void resetGame(boolean restart){
         player.setDefaultPositions();
-        player.restoreLifeAndMana();
+        player.restoreStatus();
         aSetter.setNPC();
         aSetter.setMonster();
-        playMusic(0);
-    }
-    public void restart(){
-        player.setDefaultValues();
-        player.setDefaultPositions();
-        player.restoreLifeAndMana();
-        player.setItems();
-        aSetter.setObject();
-        aSetter.setNPC();
-        aSetter.setMonster();
-        aSetter.setInteractiveTile();
+
+        if(restart == true){
+            player.setDefaultValues();
+            aSetter.setObject();
+            aSetter.setInteractiveTile();
+            eManager.lighting.resetDay();
+        }
+
     }
     public void setFullScreen(){
         // get local screen device
@@ -140,7 +137,6 @@ public class GamePanel extends JPanel implements Runnable{
         screenWidth2 = Main.window.getWidth();
         screenHeight2 = Main.window.getHeight();
     }
-
     public void startGameThread(){ //create a new Thread and start it
         gameThread = new Thread(this);
         gameThread.start();
@@ -181,7 +177,6 @@ public class GamePanel extends JPanel implements Runnable{
 
         }
     }
-
     public void update(){
         if(gameState == playState){
             //PLAYER
@@ -241,7 +236,6 @@ public class GamePanel extends JPanel implements Runnable{
         }
 
     }
-
     public void drawToTempScreen(){
         //DEBUG
         long drawStart = 0;
@@ -351,23 +345,19 @@ public class GamePanel extends JPanel implements Runnable{
             //System.out.println("Draw Time: " + passed);
         }
     }
-
     public void drawToScreen(){
         Graphics g = getGraphics();
         g.drawImage(tempScreen, 0,0, screenWidth2, screenHeight2, null);
         g.dispose();
     }
-
     public void playMusic(int i){
         music.setFile(i);
         music.play();
         music.loop();
     }
-
     public void stopMusic(){
         music.stop();
     }
-
     //play sound effects
     public void playSE(int i){
         se.setFile(i);

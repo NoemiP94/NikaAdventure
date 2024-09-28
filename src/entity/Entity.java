@@ -495,7 +495,6 @@ public class Entity { //abstract class
         }
 
     }
-
     public void damagePlayer(int attack){
         if(gp.player.invincible == false){
 
@@ -543,7 +542,6 @@ public class Entity { //abstract class
         target.speed += knockBackPower;
         target.knockBack = true;
     }
-
     public void draw(Graphics2D g2){
         BufferedImage image = null;
         int screenX = worldX - gp.player.worldX + gp.player.screenX;
@@ -632,7 +630,6 @@ public class Entity { //abstract class
             changeAlpha(g2,1f);
         }
     }
-
     public void dyingAnimation(Graphics2D g2){
         dyingCounter++;
 
@@ -666,11 +663,9 @@ public class Entity { //abstract class
             alive = false;
         }
     }
-
     public void changeAlpha(Graphics2D g2, float alphaValue){
         g2.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_OVER, alphaValue));
     }
-
     public BufferedImage setup(String imagePath, int width, int height){
         UtilityTool uTool = new UtilityTool();
         BufferedImage image = null;
@@ -756,7 +751,6 @@ public class Entity { //abstract class
             }
         }
     }
-
     public int getDetected(Entity user, Entity[][] target, String targetName){
         int index = 999;
         //check the surrounding object
@@ -764,10 +758,10 @@ public class Entity { //abstract class
         int nextWorldY = user.getTopY();
 
         switch(user.direction){
-            case "up": nextWorldY = user.getTopY() - 1; break;
-            case "down": nextWorldY = user.getBottomY() + 1; break;
-            case "left": nextWorldX = user.getLeftX() - 1; break;
-            case "right": nextWorldX = user.getRightX() + 1; break;
+            case "up": nextWorldY = user.getTopY() - gp.player.speed; break;
+            case "down": nextWorldY = user.getBottomY() + gp.player.speed; break;
+            case "left": nextWorldX = user.getLeftX() - gp.player.speed; break;
+            case "right": nextWorldX = user.getRightX() + gp.player.speed; break;
         }
 
         int col = nextWorldX/gp.tileSize;

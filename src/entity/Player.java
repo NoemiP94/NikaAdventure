@@ -40,10 +40,6 @@ public class Player extends Entity{
         //attackArea.height = 36;
 
         setDefaultValues();
-        getImage();
-        getAttackImage();
-        getGuardImage();
-        setItems();
     }
 
     public void setDefaultValues(){
@@ -71,10 +67,16 @@ public class Player extends Entity{
         coin = 500;
         currentWeapon = new OBJ_Sword_Normal(gp);
         currentShield = new OBJ_Shield_Wood(gp);
+        currentLight = null;
         projectile = new OBJ_Fireball(gp);
         //projectile = new OBJ_Rock(gp);
         attack = getAttack(); // total attack value = strength + weapon
         defense = getDefense(); // total defense = dexterity + shield
+
+        getImage();
+        getAttackImage();
+        getGuardImage();
+        setItems();
 
     }
     public void setDefaultPositions(){
@@ -83,11 +85,15 @@ public class Player extends Entity{
         worldY= gp.tileSize * 21;
         direction = "down";
     }
-    public void restoreLifeAndMana(){
+    public void restoreStatus(){
         life = maxLife;
         mana = maxMana;
         invincible = false;
         transparent = false;
+        attacking = false;
+        guarding = false;
+        knockBack = false;
+        lightUpdated = true;
     }
     public void setItems(){
         inventory.clear();
@@ -104,7 +110,6 @@ public class Player extends Entity{
     public int getDefense(){
         return defense = dexterity * currentShield.defenseValue;
     }
-
     //load player images
     public void getImage(){
         up1 = setup("/player/nika_up1", gp.tileSize,gp.tileSize);
@@ -126,7 +131,6 @@ public class Player extends Entity{
         right1 = image;
         right2 = image;
     }
-
     public void getAttackImage(){
         if(currentWeapon.type == type_sword){
             attackUp1 = setup("/player/nika_attack_up_1", gp.tileSize,gp.tileSize*2);
@@ -156,7 +160,6 @@ public class Player extends Entity{
         guardLeft = setup("/player/nika_guard_left", gp.tileSize,gp.tileSize);
         guardRight = setup("/player/nika_guard_right", gp.tileSize,gp.tileSize);
     }
-
     public void update(){
         if(knockBack == true){
 
@@ -338,7 +341,6 @@ public class Player extends Entity{
         }
 
     }
-
     public void pickUpObject(int i){
         if(i != 999){
             //pickup only items
@@ -368,7 +370,6 @@ public class Player extends Entity{
         }
 
     }
-
     public void interactNPC(int i){
 
         if(gp.keyH.enterPressed == true){
@@ -380,7 +381,6 @@ public class Player extends Entity{
             }
         }
     }
-
     public void contactMonster(int i){
         if(i != 999){
             if(invincible == false && gp.monster[gp.currentMap][i].dying == false){
@@ -396,7 +396,6 @@ public class Player extends Entity{
 
         }
     }
-
     public void damageMonster(int i,Entity attacker, int attack, int knockBackPower){
         if(i != 999){
            if(gp.monster[gp.currentMap][i].invincible == false){
@@ -430,7 +429,6 @@ public class Player extends Entity{
            }
         }
     }
-
     public void damageInteractiveTile(int i){
         if(i != 999 && gp.iTile[gp.currentMap][i].destructible == true
                 && gp.iTile[gp.currentMap][i].isCorrectItem(this) == true
@@ -447,7 +445,6 @@ public class Player extends Entity{
             }
         }
     }
-
     public void damageProjectile(int i){
         if(i != 999){
             Entity projectile = gp.projectile[gp.currentMap][i]; //if player it the projectile
@@ -471,7 +468,6 @@ public class Player extends Entity{
 
         }
     }
-
     public void selectItem(){
         int itemIndex = gp.ui.getItemIndexOnSlot(gp.ui.playerSlotCol,gp.ui.playerSlotRow);
         if(itemIndex < inventory.size()){
@@ -544,7 +540,6 @@ public class Player extends Entity{
         }
         return canObtain;
     }
-
     public void draw(Graphics2D g2){
        // g2.setColor(Color.white);
        // g2.fillRect(x, y, gp.tileSize, gp.tileSize); //fillRect( x, y, width, height ) -> draw a rectangle

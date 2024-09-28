@@ -4,21 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6688bab-d039-4b46-9b3f-6184f520bb9a" name="Changes" comment="monster swings a weapon, attack AI and unique attack motion speed">
-      <change afterPath="$PROJECT_DIR$/res/player/nika_guard_down.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/player/nika_guard_left.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/player/nika_guard_right.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/player/nika_guard_up.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/sound/blocked.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/sound/parry.wav" afterDir="false" />
+    <list default="true" id="e6688bab-d039-4b46-9b3f-6184f520bb9a" name="Changes" comment="fix bug">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/entity/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Entity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/entity/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/Projectile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Projectile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/environment/Lighting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/environment/Lighting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/CollisionChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/CollisionChecker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/GamePanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/KeyHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/KeyHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Sound.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Sound.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/UI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/monster/MON_Orc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/monster/MON_Orc.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,22 +87,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1722417396960</updated>
-    </task>
-    <task id="LOCAL-00017" summary="npc collision">
-      <option name="closed" value="true" />
-      <created>1724834271766</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1724834271767</updated>
-    </task>
-    <task id="LOCAL-00018" summary="dialogues">
-      <option name="closed" value="true" />
-      <created>1724918087870</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1724918087870</updated>
     </task>
     <task id="LOCAL-00019" summary="custom font">
       <option name="closed" value="true" />
@@ -486,12 +464,26 @@
       <option name="project" value="LOCAL" />
       <updated>1727343527926</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="guard and parry">
+      <option name="closed" value="true" />
+      <created>1727367217737</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1727367217737</updated>
+    </task>
+    <task id="LOCAL-00067" summary="fix bug">
+      <option name="closed" value="true" />
+      <created>1727367332139</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1727367332139</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="breaking objects" />
-    <MESSAGE value="particles" />
     <MESSAGE value="full screen mode" />
     <MESSAGE value="options menu" />
     <MESSAGE value="saving config to a text file" />
@@ -515,6 +507,8 @@
     <MESSAGE value="map screen and minimap" />
     <MESSAGE value="creating orc class and fix knockback direction" />
     <MESSAGE value="monster swings a weapon, attack AI and unique attack motion speed" />
-    <option name="LAST_COMMIT_MESSAGE" value="monster swings a weapon, attack AI and unique attack motion speed" />
+    <MESSAGE value="guard and parry" />
+    <MESSAGE value="fix bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix bug" />
   </component>
 </project>

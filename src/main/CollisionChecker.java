@@ -64,7 +64,6 @@ public class CollisionChecker {
                 break;
         }
     }
-
     public int checkObject(Entity entity, boolean player){
         int index = 999;
         for(int i = 0; i < gp.obj[1].length; i++){
@@ -115,9 +114,7 @@ public class CollisionChecker {
         }
         return index;
     }
-
     //NPC or Monster collision
-
     public int checkEntity(Entity entity, Entity[][] target){
         int index = 999;
 
@@ -169,7 +166,6 @@ public class CollisionChecker {
         }
         return index;
     }
-
     public boolean checkPlayer(Entity entity){
 
         boolean contactPlayer = false;
@@ -192,7 +188,6 @@ public class CollisionChecker {
                 break;
             case "down":
                 entity.solidArea.y += entity.speed;
-
                 break;
             case "left":
                 entity.solidArea.x -= entity.speed;
