@@ -154,7 +154,7 @@ public class KeyHandler implements KeyListener {//interface for receiving keyboa
     }
     public void dialogueState(int code){
         if(code == KeyEvent.VK_ENTER){//if the user press ENTER
-            gp.gameState = gp.playState;
+            enterPressed = true;
         }
     }
     public void characterState(int code){
