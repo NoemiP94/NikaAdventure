@@ -4,28 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6688bab-d039-4b46-9b3f-6184f520bb9a" name="Changes" comment="advanced dialogues">
-      <change afterPath="$PROJECT_DIR$/src/main/EntityGenerator.java" afterDir="false" />
+    <list default="true" id="e6688bab-d039-4b46-9b3f-6184f520bb9a" name="Changes" comment="fix bug">
+      <change afterPath="$PROJECT_DIR$/res/maps/dungeon01.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/maps/dungeon02.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/monster/redslime_down_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/monster/redslime_down_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/sound/Dungeon.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/sound/Merchant.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/monster/MON_RedSlime.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/SaveLoad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/SaveLoad.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/environment/Lighting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/environment/Lighting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/AssetSetter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/AssetSetter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/EventHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/EventHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/GamePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/object/OBJ_Axe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/OBJ_Axe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/object/OBJ_Boots.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/OBJ_Boots.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/object/OBJ_Chest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/OBJ_Chest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/object/OBJ_Coin_Bronze.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/OBJ_Coin_Bronze.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/object/OBJ_Door.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/OBJ_Door.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/object/OBJ_Fireball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/OBJ_Fireball.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/object/OBJ_Heart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/OBJ_Heart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/object/OBJ_Key.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/OBJ_Key.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/object/OBJ_Lantern.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/OBJ_Lantern.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/object/OBJ_Mana_Crystal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/OBJ_Mana_Crystal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/object/OBJ_Potion_Red.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/OBJ_Potion_Red.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/object/OBJ_Rock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/OBJ_Rock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/object/OBJ_Shield_Blue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/OBJ_Shield_Blue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/object/OBJ_Shield_Wood.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/OBJ_Shield_Wood.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/object/OBJ_Sword_Normal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/OBJ_Sword_Normal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/object/OBJ_Tent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/OBJ_Tent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Sound.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Sound.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/UI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/monster/MON_GreenSlime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/monster/MON_GreenSlime.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tile/TileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tile/TileManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,10 +74,13 @@
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\m_emi\OneDrive\Desktop\NikaAdventure\res\sound" />
-      <recent name="C:\Users\m_emi\OneDrive\Desktop\NikaAdventure\res\player" />
-      <recent name="C:\Users\m_emi\OneDrive\Desktop\NikaAdventure\res\monster" />
       <recent name="C:\Users\m_emi\OneDrive\Desktop\NikaAdventure\res\maps" />
+      <recent name="C:\Users\m_emi\OneDrive\Desktop\NikaAdventure\res\monster" />
+      <recent name="C:\Users\m_emi\OneDrive\Desktop\NikaAdventure\res\player" />
       <recent name="C:\Users\m_emi\OneDrive\Desktop\NikaAdventure\res\objects" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="monster" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -100,14 +98,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1722417396960</updated>
-    </task>
-    <task id="LOCAL-00022" summary="create event (damage pit)">
-      <option name="closed" value="true" />
-      <created>1725439254631</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1725439254631</updated>
     </task>
     <task id="LOCAL-00023" summary="create event (healing pool)">
       <option name="closed" value="true" />
@@ -493,7 +483,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727693549828</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="fix bug">
+      <option name="closed" value="true" />
+      <created>1727769542077</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1727769542079</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -518,10 +516,10 @@
     <MESSAGE value="creating orc class and fix knockback direction" />
     <MESSAGE value="monster swings a weapon, attack AI and unique attack motion speed" />
     <MESSAGE value="guard and parry" />
-    <MESSAGE value="fix bug" />
     <MESSAGE value="fix and update code" />
     <MESSAGE value="save and load" />
     <MESSAGE value="advanced dialogues" />
-    <option name="LAST_COMMIT_MESSAGE" value="advanced dialogues" />
+    <MESSAGE value="fix bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix bug" />
   </component>
 </project>

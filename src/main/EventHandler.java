@@ -48,7 +48,6 @@ public class EventHandler{
                 + "(The progress has been saved)";
         eventMaster.dialogues[1][1] = "Damn, this is good water.";
     }
-
     public void checkEvent(){
 
         //check if the player character us more than 1 tile away from the last event
@@ -60,22 +59,15 @@ public class EventHandler{
         }
 
         if(canTouchEvent == true){
-            if(hit(0,27,16,"right") == true){
-                //event happens
-                damagePit(gp.dialogueState);
-            }
-            else if(hit(0,23,12,"up") == true){
-                healingPool(gp.dialogueState);
-            }
-            else if(hit(0,10,39,"any") == true){
-                teleport(1,12,13);
-            }
-            else if(hit(1,12,13,"any") == true){
-                teleport(0,10,39);
-            }
-            else if(hit(1,12,9,"up") == true){
-                speak(gp.npc[1][0]);
-            }
+            if(hit(0,27,16,"right") == true){damagePit(gp.dialogueState);}//event happens
+            else if(hit(0,23,12,"up") == true){healingPool(gp.dialogueState);}
+            else if(hit(0,10,39,"any") == true){teleport(1,12,13,gp.indoor); } //to the merchant
+            else if(hit(1,12,13,"any") == true){teleport(0,10,39,gp.outside);} //from the merchant
+            else if(hit(1,12,9,"up") == true){speak(gp.npc[1][0]);}
+            else if(hit(0,12,9,"any") == true){teleport(2,9,41,gp.dungeon);} //to the dungeon1
+            else if(hit(2,9,41,"any") == true){teleport(0,12,9,gp.outside);} //to outside
+            else if(hit(2,8,7,"any") == true){teleport(3,26,41,gp.dungeon);} //to the dungeon2
+            else if(hit(3,26,41,"any") == true){teleport(2,8,7,gp.dungeon);} //to the dungeon1
         }
 
     }
@@ -110,7 +102,6 @@ public class EventHandler{
         }
         return hit;
     }
-
     public void damagePit(int gameState){
         gp.gameState = gameState;
         gp.playSE(6);
@@ -118,8 +109,6 @@ public class EventHandler{
         gp.player.life -= 1;
         canTouchEvent = false;
     }
-
-
     public void healingPool(int gameState){
         if(gp.keyH.enterPressed == true){
             gp.gameState = gameState;
@@ -132,9 +121,9 @@ public class EventHandler{
             gp.saveLoad.save();
         }
     }
-
-    public void teleport(int map, int col, int row){
+    public void teleport(int map, int col, int row, int area ){
         gp.gameState = gp.transitionState;
+        gp.nextArea = area;
         tempMap = map;
         tempCol = col;
         tempRow = row;

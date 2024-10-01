@@ -60,9 +60,6 @@ public class MON_GreenSlime extends Entity {
 
             //to follow player -> search the direction to go
             searchPath(getGoalCol(gp.player), getGoalRow(gp.player));
-
-            //check if it shoots a projectile
-            checkShootOrNot(200,30);
         }
         else {
             //check if it starts chasing
