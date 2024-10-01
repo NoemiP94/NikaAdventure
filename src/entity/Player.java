@@ -124,7 +124,6 @@ public class Player extends Entity{
         }
         return currentWeaponSlot;
     }
-
     public int getCurrentShieldSLot(){
         int currentShieldSlot = 0;
         for(int i = 0; i < inventory.size();i++){
@@ -488,6 +487,7 @@ public class Player extends Entity{
 
             gp.gameState = gp.dialogueState;
 
+            setDialogue();
             startDialogue(this,0);
         }
     }
@@ -541,23 +541,25 @@ public class Player extends Entity{
     public boolean canObtainItem(Entity item){
         //check if we can obtain this item
         boolean canObtain = false;
+        Entity newItem = gp.eGenerator.getObject(item.name);
         //check if item is stackable
-        if(item.stackable == true){
-            int index = searchItemInInventory(item.name);
+        if(newItem.stackable == true){
+            int index = searchItemInInventory(newItem.name);
+
             if(index != 999){ //if we already have the same item
                 inventory.get(index).amount++; //ad its amount, but not a new slot
                 canObtain = true;
             }
             else { //it's not in inventory -> check vacancy
                 if(inventory.size() != maxInventorySize){
-                    inventory.add(item); //add in a new slot
+                    inventory.add(newItem); //add in a new slot
                     canObtain = true;
                 }
             }
         }
         else { //if it's not stackable -> check vacancy
             if(inventory.size() != maxInventorySize){
-                inventory.add(item); //add in a new slot
+                inventory.add(newItem); //add in a new slot
                 canObtain = true;
             }
         }

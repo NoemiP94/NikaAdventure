@@ -8,10 +8,11 @@ import java.awt.*;
 
 public class OBJ_Rock extends Projectile {
     GamePanel gp;
+    public static final String objName = "Rock";
     public OBJ_Rock(GamePanel gp) {
         super(gp);
         this.gp = gp;
-        name = "Rock";
+        name = objName;
         speed = 8;
         maxLife = 80; //disappear every 80 frames
         life = maxLife;
