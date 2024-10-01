@@ -404,14 +404,17 @@ public class Player extends Entity{
 
     }
     public void interactNPC(int i){
+        if(i != 999){
 
-        if(gp.keyH.enterPressed == true){
-            if(i != 999){
-                 attackCanceled = true;
-                 gp.npc[gp.currentMap][i].speak();
-
+            if(gp.keyH.enterPressed == true){
+                    attackCanceled = true;
+                    gp.npc[gp.currentMap][i].speak();
             }
+
+            gp.npc[gp.currentMap][i].move(direction);
         }
+
+
     }
     public void contactMonster(int i){
         if(i != 999){

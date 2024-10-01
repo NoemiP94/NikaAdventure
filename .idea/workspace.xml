@@ -4,37 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6688bab-d039-4b46-9b3f-6184f520bb9a" name="Changes" comment="enter the dungeon">
-      <change afterPath="$PROJECT_DIR$/res/monster/bat_down_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/monster/bat_down_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/objects/door_iron.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/objects/pickaxe.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/player/nika_pick_down_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/player/nika_pick_down_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/player/nika_pick_left_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/player/nika_pick_left_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/player/nika_pick_right_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/player/nika_pick_right_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/player/nika_pick_up_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/player/nika_pick_up_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/sound/FinalBattle.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/sound/chipwall.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/sound/dooropen.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/tiles_interactive/destructiblewall.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/tiles_interactive/metalplate.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entity/NPC_BigRock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/object/OBJ_Door_Iron.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/object/OBJ_Pickaxe.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tile_interactive/IT_DestructibleWall.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tile_interactive/IT_MetalPlate.java" afterDir="false" />
+    <list default="true" id="e6688bab-d039-4b46-9b3f-6184f520bb9a" name="Changes" comment="create puzzle (add classes)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/entity/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Entity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/NPC_BigRock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/NPC_BigRock.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/entity/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/AssetSetter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/AssetSetter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/EntityGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/EntityGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/GamePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Sound.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Sound.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tile_interactive/IT_DryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tile_interactive/IT_DryTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/object/OBJ_Door_Iron.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/OBJ_Door_Iron.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tile_interactive/IT_DestructibleWall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tile_interactive/IT_DestructibleWall.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,14 +89,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1722417396960</updated>
-    </task>
-    <task id="LOCAL-00024" summary="advanced event">
-      <option name="closed" value="true" />
-      <created>1725442200742</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1725442200742</updated>
     </task>
     <task id="LOCAL-00025" summary="improve render order">
       <option name="closed" value="true" />
@@ -505,11 +474,18 @@
       <option name="project" value="LOCAL" />
       <updated>1727772441711</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="create puzzle (add classes)">
+      <option name="closed" value="true" />
+      <created>1727778155478</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1727778155478</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="transitions between maps" />
     <MESSAGE value="transitions between maps(transition state)" />
     <MESSAGE value="handling trade state" />
     <MESSAGE value="add cursor" />
@@ -534,6 +510,7 @@
     <MESSAGE value="advanced dialogues" />
     <MESSAGE value="fix bug" />
     <MESSAGE value="enter the dungeon" />
-    <option name="LAST_COMMIT_MESSAGE" value="enter the dungeon" />
+    <MESSAGE value="create puzzle (add classes)" />
+    <option name="LAST_COMMIT_MESSAGE" value="create puzzle (add classes)" />
   </component>
 </project>

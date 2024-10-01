@@ -29,7 +29,6 @@ public class OBJ_Door_Iron extends Entity {
     public void setDialogue(){
         dialogues[0][0] = "It won't budge.";
     }
-
     public void interact(){
         startDialogue(this, 0);
 

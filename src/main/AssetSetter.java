@@ -1,5 +1,6 @@
 package main;
 
+import entity.NPC_BigRock;
 import entity.NPC_Merchant;
 import entity.NPC_OldMan;
 import monster.MON_GreenSlime;
@@ -8,6 +9,7 @@ import monster.MON_RedSlime;
 import object.*;
 import tile_interactive.IT_DestructibleWall;
 import tile_interactive.IT_DryTree;
+import tile_interactive.IT_MetalPlate;
 
 public class AssetSetter {
     GamePanel gp;
@@ -67,21 +69,41 @@ public class AssetSetter {
         gp.obj[mapNum][i].worldX = 27 * gp.tileSize;
         gp.obj[mapNum][i].worldY = 15 * gp.tileSize;
         i++;
+        gp.obj[mapNum][i] = new OBJ_Door_Iron(gp);
+        gp.obj[mapNum][i].worldX = 18 * gp.tileSize;
+        gp.obj[mapNum][i].worldY = 23 * gp.tileSize;
+        i++;
+
     }
 
     public void setNPC(){
         int mapNum = 0;
         int i = 0;
-        gp.npc[mapNum][0] = new NPC_OldMan(gp);
-        gp.npc[mapNum][0].worldX = gp.tileSize*21;
-        gp.npc[mapNum][0].worldY = gp.tileSize*21;
+        gp.npc[mapNum][i] = new NPC_OldMan(gp);
+        gp.npc[mapNum][i].worldX = gp.tileSize*21;
+        gp.npc[mapNum][i].worldY = gp.tileSize*21;
         i++;
 
         mapNum = 1;
         i = 0;
-        gp.npc[mapNum][0] = new NPC_Merchant(gp);
-        gp.npc[mapNum][0].worldX = gp.tileSize*12;
-        gp.npc[mapNum][0].worldY = gp.tileSize*7;
+        gp.npc[mapNum][i] = new NPC_Merchant(gp);
+        gp.npc[mapNum][i].worldX = gp.tileSize*12;
+        gp.npc[mapNum][i].worldY = gp.tileSize*7;
+        i++;
+
+        mapNum = 2;
+        i = 0;
+        gp.npc[mapNum][i] = new NPC_BigRock(gp);
+        gp.npc[mapNum][i].worldX = gp.tileSize*20;
+        gp.npc[mapNum][i].worldY = gp.tileSize*25;
+        i++;
+        gp.npc[mapNum][i] = new NPC_BigRock(gp);
+        gp.npc[mapNum][i].worldX = gp.tileSize*11;
+        gp.npc[mapNum][i].worldY = gp.tileSize*18;
+        i++;
+        gp.npc[mapNum][i] = new NPC_BigRock(gp);
+        gp.npc[mapNum][i].worldX = gp.tileSize*23;
+        gp.npc[mapNum][i].worldY = gp.tileSize*14;
         i++;
 
 
@@ -217,6 +239,10 @@ public class AssetSetter {
         gp.iTile[mapNum][i] = new IT_DestructibleWall(gp,22,28);i++;
         gp.iTile[mapNum][i] = new IT_DestructibleWall(gp,30,28);i++;
         gp.iTile[mapNum][i] = new IT_DestructibleWall(gp,32,28);i++;
+
+        gp.iTile[mapNum][i] = new IT_MetalPlate(gp,20,22);i++;
+        gp.iTile[mapNum][i] = new IT_MetalPlate(gp,8,17);i++;
+        gp.iTile[mapNum][i] = new IT_MetalPlate(gp,39,31);i++;
 
 
 
