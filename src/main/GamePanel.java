@@ -154,10 +154,8 @@ public class GamePanel extends JPanel implements Runnable{
         gameThread.start();
     }
 
-
-    //DELTA/ACCUMULATOR METHOD
     @Override
-    public void run(){
+    public void run(){//DELTA/ACCUMULATOR METHOD
         double drawInterval = 1000000000/FPS;
         double delta = 0;
         long lastTime = System.nanoTime();
