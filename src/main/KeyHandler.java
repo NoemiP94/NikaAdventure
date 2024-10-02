@@ -8,6 +8,7 @@ public class KeyHandler implements KeyListener {//interface for receiving keyboa
     public boolean upPressed, downPressed, leftPressed, rightPressed, enterPressed, shotKeyPressed, spacePressed;
     //DEBUG
     boolean showDebugText = false;
+    public boolean godModeOn = false;
 
     public KeyHandler(GamePanel gp){
         this.gp = gp;
@@ -145,6 +146,13 @@ public class KeyHandler implements KeyListener {//interface for receiving keyboa
                 case 1:gp.tileM.loadMap("/maps/indoor01.txt",1); break;
             }
 
+        }
+        if(code == KeyEvent.VK_G){// godMode
+            if(godModeOn == false){
+                godModeOn = true;
+            }else if (godModeOn == true){
+                godModeOn = false;
+            }
         }
     }
     public void pauseState(int code){
@@ -362,5 +370,6 @@ public class KeyHandler implements KeyListener {//interface for receiving keyboa
         if(code == KeyEvent.VK_SPACE) { //if the user press SPACE
             spacePressed = false;
         }
+
     }
 }
