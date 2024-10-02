@@ -140,6 +140,7 @@ public class UI {
             g2.drawImage(heart_blank,x,y,null);
             i++;
             x += gp.tileSize;
+
         }
 
         //RESET

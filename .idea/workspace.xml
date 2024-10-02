@@ -4,55 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6688bab-d039-4b46-9b3f-6184f520bb9a" name="Changes" comment="fix bug">
-      <change afterPath="$PROJECT_DIR$/res/monster/skeletonlord_attack_down_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/monster/skeletonlord_attack_down_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/monster/skeletonlord_attack_left_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/monster/skeletonlord_attack_left_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/monster/skeletonlord_attack_right_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/monster/skeletonlord_attack_right_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/monster/skeletonlord_attack_up_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/monster/skeletonlord_attack_up_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/monster/skeletonlord_down_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/monster/skeletonlord_down_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/monster/skeletonlord_left_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/monster/skeletonlord_left_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/monster/skeletonlord_phase2_attack_down_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/monster/skeletonlord_phase2_attack_down_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/monster/skeletonlord_phase2_attack_left_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/monster/skeletonlord_phase2_attack_left_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/monster/skeletonlord_phase2_attack_right_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/monster/skeletonlord_phase2_attack_right_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/monster/skeletonlord_phase2_attack_up_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/monster/skeletonlord_phase2_attack_up_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/monster/skeletonlord_phase2_down_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/monster/skeletonlord_phase2_down_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/monster/skeletonlord_phase2_left_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/monster/skeletonlord_phase2_left_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/monster/skeletonlord_phase2_right_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/monster/skeletonlord_phase2_right_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/monster/skeletonlord_phase2_up_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/monster/skeletonlord_phase2_up_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/monster/skeletonlord_right_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/monster/skeletonlord_right_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/monster/skeletonlord_up_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/monster/skeletonlord_up_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/monster/MON_Bat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/monster/MON_SkeletonLord.java" afterDir="false" />
+    <list default="true" id="e6688bab-d039-4b46-9b3f-6184f520bb9a" name="Changes" comment="add final boss fight">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.txt" beforeDir="false" afterPath="$PROJECT_DIR$/config.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/SaveLoad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/SaveLoad.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Entity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/environment/EnvironmentManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/environment/EnvironmentManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/environment/Lighting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/environment/Lighting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/AssetSetter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/AssetSetter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/CollisionChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/CollisionChecker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/GamePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/KeyHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/KeyHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/monster/MON_GreenSlime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/monster/MON_GreenSlime.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/monster/MON_Orc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/monster/MON_Orc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/monster/MON_RedSlime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/monster/MON_RedSlime.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/UI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,14 +84,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1722417396960</updated>
-    </task>
-    <task id="LOCAL-00027" summary="hit detection">
-      <option name="closed" value="true" />
-      <created>1725620397416</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1725620397416</updated>
     </task>
     <task id="LOCAL-00028" summary="health bar &amp; death animation">
       <option name="closed" value="true" />
@@ -523,11 +469,18 @@
       <option name="project" value="LOCAL" />
       <updated>1727788063235</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary="add final boss fight">
+      <option name="closed" value="true" />
+      <created>1727862597449</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1727862597449</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="handling trade state" />
     <MESSAGE value="add cursor" />
     <MESSAGE value="display price" />
     <MESSAGE value="buy and sell items" />
@@ -552,6 +505,7 @@
     <MESSAGE value="create puzzle (add classes)" />
     <MESSAGE value="create puzzle (puzzle mechanics)" />
     <MESSAGE value="fix bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix bug" />
+    <MESSAGE value="add final boss fight" />
+    <option name="LAST_COMMIT_MESSAGE" value="add final boss fight" />
   </component>
 </project>
