@@ -361,7 +361,7 @@ public class UI {
                 //reset charIndex and combinedText
                 charIndex = 0;
                 combinedText ="";
-                if(gp.gameState == gp.dialogueState){ //and if we are in dialogueState
+                if(gp.gameState == gp.dialogueState || gp.gameState == gp.cutsceneState){ //and if we are in dialogueState
                     //increase dialogueIndex
                     npc.dialogueIndex++;
                     gp.keyH.enterPressed = false;
@@ -372,6 +372,9 @@ public class UI {
             npc.dialogueIndex = 0;
             if(gp.gameState == gp.dialogueState){
                 gp.gameState = gp.playState;
+            }
+            if(gp.gameState == gp.cutsceneState){
+                gp.csManager.scenePhase++; //continue the cutscene
             }
         }
 

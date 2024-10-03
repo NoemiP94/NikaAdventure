@@ -58,6 +58,7 @@ public class GamePanel extends JPanel implements Runnable{
     Map map = new Map(this);
     SaveLoad saveLoad = new SaveLoad(this);
     public EntityGenerator eGenerator = new EntityGenerator(this);
+    public CutsceneManager csManager = new CutsceneManager(this);
     Thread gameThread; //time in game
 
     //ENTITY AND OBJECT
@@ -84,6 +85,10 @@ public class GamePanel extends JPanel implements Runnable{
     public final int tradeState = 8;
     public final int sleepState = 9;
     public final int mapState = 10;
+    public final int cutsceneState = 11;
+
+    //OTHERS
+    public boolean bossBattleOn = false;
 
     //AREA
     public int currentArea;
@@ -112,7 +117,8 @@ public class GamePanel extends JPanel implements Runnable{
         //playMusic(0);
         //stopMusic();
         gameState  = titleState;
-        currentArea = outside;
+        //currentArea = outside;
+        currentArea = dungeon;
 
         //full screen
         tempScreen = new BufferedImage(screenWidth, screenHeight, BufferedImage.TYPE_INT_ARGB);
@@ -121,12 +127,12 @@ public class GamePanel extends JPanel implements Runnable{
         if(fullScreenOn == true){
             setFullScreen();
         }
-
-
     }
     public void resetGame(boolean restart){
 
         currentArea = outside;
+        removeTempEntity();
+        bossBattleOn = false;
         player.setDefaultPositions();
         player.restoreStatus();
         player.resetCounter();
@@ -326,12 +332,12 @@ public class GamePanel extends JPanel implements Runnable{
             //mini map
             map.drawMiniMap(g2);
 
+            //cutscene
+            csManager.draw(g2);
+
             //UI
             ui.draw(g2);
         }
-
-
-
 
         //DEBUG
         if(keyH.showDebugText == true){
@@ -391,5 +397,14 @@ public class GamePanel extends JPanel implements Runnable{
         }
         currentArea = nextArea;
         aSetter.setMonster(); //respawn monsters when change area
+    }
+    public void removeTempEntity(){
+        for(int mapNum = 0; mapNum < maxMap; mapNum++){
+            for(int i = 0; i < obj[1].length; i++){
+                if(obj[mapNum][i] != null && obj[mapNum][i].temp == true){
+                    obj[mapNum][i] = null; //remove obj
+                }
+            }
+        }
     }
 }

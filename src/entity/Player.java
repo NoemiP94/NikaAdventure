@@ -44,8 +44,8 @@ public class Player extends Entity{
 
     public void setDefaultValues(){
         //player position on world map
-        worldX = gp.tileSize * 23;
-        worldY= gp.tileSize * 21;
+        worldX = gp.tileSize * 25;
+        worldY= gp.tileSize * 35;
 //        worldX = gp.tileSize * 12;
 //        worldY= gp.tileSize * 12;
         gp.currentMap = 3;
@@ -107,6 +107,7 @@ public class Player extends Entity{
         inventory.add(currentWeapon);
         inventory.add(currentShield);
         inventory.add(new OBJ_Key(gp));
+        inventory.add(new OBJ_Lantern(gp));
     }
     public int getAttack(){
         attackArea = currentWeapon.attackArea;
@@ -656,8 +657,9 @@ public class Player extends Entity{
         if(transparent == true){
             g2.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_OVER, 0.4f)); //transparance
         }
-        g2.drawImage(image, tempScreenX,tempScreenY,  null);
-
+        if(drawing == true){
+            g2.drawImage(image, tempScreenX,tempScreenY,  null);
+        }
         //Reset alpha
         g2.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_OVER, 1f));
         //DEBUG

@@ -33,8 +33,8 @@ public class KeyHandler implements KeyListener {//interface for receiving keyboa
         else if(gp.gameState == gp.pauseState){
             pauseState(code);
         }
-        //DIALOGUE STATE
-        else if(gp.gameState == gp.dialogueState){
+        //DIALOGUE STATE AND CUTSCENE STATE
+        else if(gp.gameState == gp.dialogueState || gp.gameState == gp.cutsceneState){
             dialogueState(code);
         }
         //CHARACTER STATE
