@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6688bab-d039-4b46-9b3f-6184f520bb9a" name="Changes" comment="add final boss fight">
+    <list default="true" id="e6688bab-d039-4b46-9b3f-6184f520bb9a" name="Changes" comment="fix bug">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Entity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/Projectile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Projectile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/UI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/monster/MON_SkeletonLord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/monster/MON_SkeletonLord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/object/OBJ_Fireball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/OBJ_Fireball.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,14 +88,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1722417396960</updated>
-    </task>
-    <task id="LOCAL-00028" summary="health bar &amp; death animation">
-      <option name="closed" value="true" />
-      <created>1725701369826</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1725701369826</updated>
     </task>
     <task id="LOCAL-00029" summary="character status">
       <option name="closed" value="true" />
@@ -477,7 +473,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727862597449</updated>
     </task>
-    <option name="localTasksCounter" value="77" />
+    <task id="LOCAL-00077" summary="fix bug">
+      <option name="closed" value="true" />
+      <created>1727865335417</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1727865335417</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -504,8 +508,8 @@
     <MESSAGE value="enter the dungeon" />
     <MESSAGE value="create puzzle (add classes)" />
     <MESSAGE value="create puzzle (puzzle mechanics)" />
-    <MESSAGE value="fix bug" />
     <MESSAGE value="add final boss fight" />
-    <option name="LAST_COMMIT_MESSAGE" value="add final boss fight" />
+    <MESSAGE value="fix bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix bug" />
   </component>
 </project>
