@@ -4,19 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6688bab-d039-4b46-9b3f-6184f520bb9a" name="Changes" comment="boss health bar">
-      <change afterPath="$PROJECT_DIR$/src/data/Progress.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entity/PlayerDummy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/CutsceneManager.java" afterDir="false" />
+    <list default="true" id="e6688bab-d039-4b46-9b3f-6184f520bb9a" name="Changes" comment="cutscene">
+      <change afterPath="$PROJECT_DIR$/res/objects/blueheart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/object/OBJ_BlueHeart.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Entity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.txt" beforeDir="false" afterPath="$PROJECT_DIR$/config.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/save.dat" beforeDir="false" afterPath="$PROJECT_DIR$/save.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/NPC_Merchant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/NPC_Merchant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/entity/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/AssetSetter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/AssetSetter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/EventHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/EventHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/CutsceneManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/CutsceneManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/EntityGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/EntityGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/GamePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/KeyHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/KeyHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/UI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/monster/MON_SkeletonLord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/monster/MON_SkeletonLord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,10 +69,10 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\m_emi\OneDrive\Desktop\NikaAdventure\res\objects" />
       <recent name="C:\Users\m_emi\OneDrive\Desktop\NikaAdventure\res\monster" />
       <recent name="C:\Users\m_emi\OneDrive\Desktop\NikaAdventure\res\tiles_interactive" />
       <recent name="C:\Users\m_emi\OneDrive\Desktop\NikaAdventure\res\npc" />
-      <recent name="C:\Users\m_emi\OneDrive\Desktop\NikaAdventure\res\objects" />
       <recent name="C:\Users\m_emi\OneDrive\Desktop\NikaAdventure\res\sound" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -94,14 +94,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1722417396960</updated>
-    </task>
-    <task id="LOCAL-00030" summary="scrolling message, leveling up, damage calculation">
-      <option name="closed" value="true" />
-      <created>1725786690975</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1725786690975</updated>
     </task>
     <task id="LOCAL-00031" summary="debug useful functions">
       <option name="closed" value="true" />
@@ -487,11 +479,18 @@
       <option name="project" value="LOCAL" />
       <updated>1727943380106</updated>
     </task>
-    <option name="localTasksCounter" value="79" />
+    <task id="LOCAL-00079" summary="cutscene">
+      <option name="closed" value="true" />
+      <created>1727950682142</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1727950682142</updated>
+    </task>
+    <option name="localTasksCounter" value="80" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="display price" />
     <MESSAGE value="buy and sell items" />
     <MESSAGE value="creating pathfinding class" />
     <MESSAGE value="npc pathfinding" />
@@ -516,6 +515,7 @@
     <MESSAGE value="add final boss fight" />
     <MESSAGE value="fix bug" />
     <MESSAGE value="boss health bar" />
-    <option name="LAST_COMMIT_MESSAGE" value="boss health bar" />
+    <MESSAGE value="cutscene" />
+    <option name="LAST_COMMIT_MESSAGE" value="cutscene" />
   </component>
 </project>

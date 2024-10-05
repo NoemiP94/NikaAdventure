@@ -44,11 +44,16 @@ public class Player extends Entity{
 
     public void setDefaultValues(){
         //player position on world map
-        worldX = gp.tileSize * 25;
-        worldY= gp.tileSize * 35;
+        //map 0
+        worldX = gp.tileSize * 22;
+        worldY= gp.tileSize * 21;
+        //map 3
+//        worldX = gp.tileSize * 25;
+//        worldY= gp.tileSize * 35;
+        //map 2
 //        worldX = gp.tileSize * 12;
 //        worldY= gp.tileSize * 12;
-        gp.currentMap = 3;
+        gp.currentMap = 0;
         defaultSpeed = 4;
         speed = defaultSpeed;
         direction = "down";

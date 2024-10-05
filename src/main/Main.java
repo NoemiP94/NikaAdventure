@@ -1,6 +1,6 @@
 package main;
 
-import javax.swing.JFrame;
+import javax.swing.*;
 
 
 public class Main {
@@ -12,6 +12,7 @@ public class Main {
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //lets the window properly close when user clicks the close button
         window.setResizable(false); //not resize the window
         window.setTitle("Nika's Adventures");
+        new Main().setIcon(); //change window icon
 
         GamePanel gamePanel = new GamePanel();
         window.add(gamePanel);
@@ -28,5 +29,10 @@ public class Main {
 
         gamePanel.setupGame();
         gamePanel.startGameThread();
+    }
+
+    public void setIcon(){
+        ImageIcon icon = new ImageIcon(getClass().getClassLoader().getResource("player/nika_down-1.png"));
+        window.setIconImage(icon.getImage());
     }
 }
