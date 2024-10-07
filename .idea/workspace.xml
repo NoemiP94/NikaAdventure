@@ -4,19 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6688bab-d039-4b46-9b3f-6184f520bb9a" name="Changes" comment="cutscene">
-      <change afterPath="$PROJECT_DIR$/res/objects/blueheart.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/object/OBJ_BlueHeart.java" afterDir="false" />
+    <list default="true" id="e6688bab-d039-4b46-9b3f-6184f520bb9a" name="Changes" comment="ending game">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.txt" beforeDir="false" afterPath="$PROJECT_DIR$/config.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/save.dat" beforeDir="false" afterPath="$PROJECT_DIR$/save.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/NPC_Merchant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/NPC_Merchant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/entity/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/AssetSetter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/AssetSetter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/CutsceneManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/CutsceneManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/EntityGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/EntityGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/GamePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/KeyHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/KeyHandler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,14 +86,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1722417396960</updated>
-    </task>
-    <task id="LOCAL-00031" summary="debug useful functions">
-      <option name="closed" value="true" />
-      <created>1725868676695</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1725868676695</updated>
     </task>
     <task id="LOCAL-00032" summary="inventory">
       <option name="closed" value="true" />
@@ -487,11 +471,18 @@
       <option name="project" value="LOCAL" />
       <updated>1727950682142</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="ending game">
+      <option name="closed" value="true" />
+      <created>1728121876621</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1728121876621</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="buy and sell items" />
     <MESSAGE value="creating pathfinding class" />
     <MESSAGE value="npc pathfinding" />
     <MESSAGE value="add aggro monsters" />
@@ -516,6 +507,7 @@
     <MESSAGE value="fix bug" />
     <MESSAGE value="boss health bar" />
     <MESSAGE value="cutscene" />
-    <option name="LAST_COMMIT_MESSAGE" value="cutscene" />
+    <MESSAGE value="ending game" />
+    <option name="LAST_COMMIT_MESSAGE" value="ending game" />
   </component>
 </project>

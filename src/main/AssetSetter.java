@@ -38,12 +38,12 @@ public class AssetSetter {
         gp.obj[mapNum][i].worldY = 29 * gp.tileSize;
         i++;
         gp.obj[mapNum][i] = new OBJ_Lantern(gp);
-        gp.obj[mapNum][i].worldX = 18 * gp.tileSize;
-        gp.obj[mapNum][i].worldY = 20 * gp.tileSize;
+        gp.obj[mapNum][i].worldX = 22 * gp.tileSize;
+        gp.obj[mapNum][i].worldY = 42 * gp.tileSize;
         i++;
         gp.obj[mapNum][i] = new OBJ_Tent(gp);
-        gp.obj[mapNum][i].worldX = 19 * gp.tileSize;
-        gp.obj[mapNum][i].worldY = 20 * gp.tileSize;
+        gp.obj[mapNum][i].worldX = 35 * gp.tileSize;
+        gp.obj[mapNum][i].worldY = 40 * gp.tileSize;
         i++;
 
         mapNum = 2;

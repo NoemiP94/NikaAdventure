@@ -112,7 +112,7 @@ public class Player extends Entity{
         inventory.add(currentWeapon);
         inventory.add(currentShield);
         inventory.add(new OBJ_Key(gp));
-        inventory.add(new OBJ_Lantern(gp));
+        //inventory.add(new OBJ_Lantern(gp));
     }
     public int getAttack(){
         attackArea = currentWeapon.attackArea;
@@ -377,9 +377,10 @@ public class Player extends Entity{
         }
 
         if(keyH.godModeOn == false ){
-            if(life <= 0){
+            if(life <= 0){ //game over
                 gp.gameState = gp.gameOverState;
                 gp.ui.commandNum = -1;
+                gp.stopMusic();
                 gp.playSE(12);
             }
         }

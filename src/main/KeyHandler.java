@@ -247,7 +247,7 @@ public class KeyHandler implements KeyListener {//interface for receiving keyboa
             if(gp.ui.commandNum == 0){ //retry
                 gp.gameState = gp.playState;
                 gp.resetGame(false);
-                //gp.playSE(0);
+                gp.playMusic(0);
             } else if (gp.ui.commandNum == 1){ //quit
                 gp.gameState = gp.titleState;
                 gp.resetGame(true);
